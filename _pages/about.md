@@ -3,6 +3,7 @@ layout: single
 permalink: /
 title: "About me"
 toc: true
+toc_sticky: true
 author_profile: true
 redirect_from: 
   - /about/
