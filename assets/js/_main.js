@@ -92,7 +92,7 @@ $(document).ready(function(){
   // Scrollspy equivalent: update hash fragment while scrolling.
   $(window).scroll(jQuery.throttle(250, function() {
     // Don't run while smooth scrolling (from clicking on a link).
-    var scrollTop = $(window).scrollTop() - 20;  // 20 = offset
+    var scrollTop = $(window).scrollTop() + 100;  // 20 = offset
     var links = [];
 
     $("nav.toc a").each(function() {
