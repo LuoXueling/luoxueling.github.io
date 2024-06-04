@@ -8,6 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
+sitename                 : "test"
 title                    : "Xueling Luo"
 title_separator          : "-"
 name                     : &name "Xueling Luo"
