@@ -22,7 +22,7 @@ repository               : "LuoXueling/luoxueling.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Xueling (Sharrin) Luo"
   pronouns         : "<b>骆雪灵</b>"
   bio              : "A master's student working on computational solid mechanics integrated with machine learning"
