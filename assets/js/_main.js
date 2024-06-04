@@ -67,26 +67,6 @@ $(document).ready(function(){
   // init smooth scroll, this needs to be slightly more than then fixed masthead height
   $("a").smoothScroll({offset: -65});
 
-  // Gumshoe scroll spy init
-  if ($("nav.toc").length > 0) {
-    var spy = new Gumshoe("nav.toc a", {
-      // Active classes
-      navClass: "active", // applied to the nav list item
-      contentClass: "active", // applied to the content
-
-      // Nested navigation
-      nested: false, // if true, add classes to parents of active link
-      nestedClass: "active", // applied to the parent items
-
-      // Offset & reflow
-      offset: 20, // how far from the top of the page to activate a content area
-      reflow: true, // if true, listen for reflows
-
-      // Event support
-      events: true, // if true, emit custom events
-    });
-  }
-
   // Auto scroll sticky ToC with content
   const scrollTocToContent = function (event) {
     var target = event.target;
@@ -105,8 +85,42 @@ $(document).ready(function(){
   };
 
   // Has issues on Firefox, whitelist Chrome for now
-  document.addEventListener("gumshoeActivate", scrollTocToContent);
-  
+  if (!!window.chrome) {
+    document.addEventListener("scrollTocToContent", scrollTocToContent);
+  }
+
+  // Scrollspy equivalent: update hash fragment while scrolling.
+  $(window).scroll(jQuery.throttle(250, function() {
+    // Don't run while smooth scrolling (from clicking on a link).
+    var scrollTop = $(window).scrollTop() + 100;  // 20 = offset
+    var links = [];
+
+    $("nav.toc a").each(function() {
+      var link = $(this);
+      var href = link.attr("href");
+      if (href && href[0] == "#") {
+        var element = $(href);
+        links.push({
+          link: link,
+          href: href,
+          top: element.offset().top
+        });
+        link.removeClass('active');
+      }
+    });
+    for (var i = 0; i < links.length; i++) {
+      var top = links[i].top;
+      var bottom = (i < links.length - 1 ? links[i+1].top : Infinity);
+      if (top <= scrollTop && scrollTop < bottom) {
+        // Mark all ancestors as active
+        links[i].link.parents("li").children("a").addClass('active');
+        if (links[i].href !== location.hash) {
+          history.replaceState(null, null, links[i].href);
+        }
+        break;
+      }
+    }
+  }));
 
   // add lightbox class to all image links
   $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").addClass("image-popup");
