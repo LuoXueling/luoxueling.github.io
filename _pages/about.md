@@ -10,69 +10,96 @@ redirect_from:
   - /about.html
 ---
 
-# Research interest
+🎓 I am currently a master's student at Shanghai Jiao Tong University (SJTU), where I also received my BEng degree. Having published an article on [CMAME](https://www.sciencedirect.com/science/article/pii/S004578252200531X) as the first author and one on [IJNME](https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.7489) as the third author, I am currently preparing another manuscript for Nature Communications. With an aspiration to delve into intriguing and innovative research, **I am looking for a PhD position in the fall term of 2025**.
 
-My research interests lie in **fracture phase field methods**, **machine learning**, and **data-driven computational mechanics**. My current research aims to incorporate data-driven methods into traditional mechanical analysis such as the finite element method and fatigue life prediction methods to alleviate empiricism.
+🔫 Besides a fulfilling academic life, I relax by playing badminton🏸 or video games🎮, walking around the campus🚶, drinking a little🍺, and eating half of a watermelon🍉 (2kg maximum).
+
+If you find my Chinese given name Xueling difficult to pronounce ([Google translation](https://translate.google.com/?sl=auto&tl=en&text=%E9%9B%AA%E7%81%B5&op=translate)), you can pronounce Sharrin which sounds similar. My Chinese name, which means snow (雪⛄) and elf (灵🧚), looks and sounds like a girl's name, just like Sharrin.
+
+# Research Interest
+
+My research interests lie in **fracture phase field methods**, **machine learning**, **data-driven computational mechanics**, or more **general computational solid mechanics topics** (depending on the prospective advisor). My current research aims to incorporate data-driven methods into traditional mechanical analysis, such as the finite element method and fatigue life prediction methods, to alleviate empiricism.
 
 # Education
 
 * **MEng, Computational Mechanics**, Shanghai Jiao Tong University (*Sept. 2022 - Present*)
   * GPA: 3.82/4.0
-  * Thesis: Machine-learning-based Fatigue Life Prediction of Fiber-reinforced Composite Materials
+  * Thesis: Machine-Learning-Based Fatigue Life Prediction of Fiber-Reinforced Composite Materials
 * **BEng, Engineering Mechanics**, Shanghai Jiao Tong University
   * GPA: 3.78/4.3 (88.8/100)
-  * Thesis: Data-driven Phase Field Fracture Analysis
+  * Thesis: Data-Driven Phase Field Fracture Analysis
   * Minor: AI+X (华东五校AI+X微辅修)
 
 # Publications
 
-* **Xue-Ling Luo**, Jia-Yu Ye, Pu-Song Ma, and Lu-Wen Zhang$$^*$$. "**Data-driven enhanced phase field models for highly accurate prediction of Mode I and Mode II fracture**." *Computer Methods in Applied Mechanics and Engineering 400* (2022): 115535. [[Publisher]](https://www.sciencedirect.com/science/article/pii/S004578252200531X) [[ResearchGate]](https://www.researchgate.net/publication/363156166_Data-driven_enhanced_phase_field_models_for_highly_accurate_prediction_of_Mode_I_and_Mode_II_fracture)
+<a name="pub-2022-data-driven"></a>
+* **Xue-Ling Luo**, Jia-Yu Ye, Pu-Song Ma, and Lu-Wen Zhang* . **Data-driven enhanced phase field models for highly accurate prediction of Mode I and Mode II fracture**. *Computer Methods in Applied Mechanics and Engineering 400* (2022): 115535. [[Publisher]](https://www.sciencedirect.com/science/article/pii/S004578252200531X) [[ResearchGate]](https://www.researchgate.net/publication/363156166_Data-driven_enhanced_phase_field_models_for_highly_accurate_prediction_of_Mode_I_and_Mode_II_fracture)
 
-* Pu‐Song Ma$$^1$$, Xing‐Cheng Liu$$^1$$, **Xue‐Ling Luo**, Shaofan Li, and Lu‐Wen Zhang$$^*$$. "**Asymptotic homogenization of phase‐field fracture model: An efficient multiscale finite element framework for anisotropic fracture**." *International Journal for Numerical Methods in Engineering* (2024): e7489. [[Publisher]](https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.7489) [[ResearchGate]](https://www.researchgate.net/publication/379517633_Asymptotic_homogenization_of_phase-field_fracture_model_An_efficient_multiscale_finite_element_framework_for_anisotropic_fracture)
+<a name="pub-2024-multiscale"></a>
+* Pu‐Song Ma<sup>1</sup>, Xing‐Cheng Liu<sup>1</sup>, **Xue‐Ling Luo**, Shaofan Li, and Lu‐Wen Zhang* . **Asymptotic homogenization of phase‐field fracture model: An efficient multiscale finite element framework for anisotropic fracture**. *International Journal for Numerical Methods in Engineering* (2024): e7489. [[Publisher]](https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.7489) [[ResearchGate]](https://www.researchgate.net/publication/379517633_Asymptotic_homogenization_of_phase-field_fracture_model_An_efficient_multiscale_finite_element_framework_for_anisotropic_fracture)
 
-* **Xue-Ling Luo** and Lu-Wen Zhang$$^*$$. "**ENSEMBLE: Ensembling empirical models and machine learning exemplified by fatigue life extrapolation of fiber-reinforced composites**.". 
+<a name="pub-2024-piml"></a>
+* (In preparation) **Xue-Ling Luo** and Lu-Wen Zhang* . **ENSEMBLE: Ensembling empirical models and machine learning exemplified by fatigue life extrapolation of fiber-reinforced composites**. 
 
-# Research experience
+# Research Experience
 
-* (Scheduled) **Fracture phase field method in helium embrittlement**, University of Oxford & Shanghai Jiao Tong University
-  * Jul. 2024 - Oct. 2024 as Research intern
-  * Supervisor: Prof. Emilio Martínez-Pañeda & Prof. Luwen Zhang
-  * Role: Simulate accumulation of helium bubbles on grain boundaries and fracture using COMSOL and fracture phase field method.
-* **Physics-informed Machine Learning for Fatigue Life Prediction**, Shanghai Jiao Tong University	
-  * Sept. 2022 – Present as Master's student
-  * Supervisor: Prof. Luwen Zhang
-  * Master’s student
-  * Role: Proposed an ensemble learning framework facilitating both empirical formulations and machine learning models; Proposed a Transformer-based model to consider the lay-up sequences of fiber-reinforced composites; Constructed a benchmark platform of machine learning models for tabular prediction in Python. 
-  * Outcomes: 
-  
- 
+* (Scheduled) **Fracture Phase Field Method in Helium Embrittlement**
+  * Period: Jul. 2024 - Oct. 2024 (as a research intern)
+  * Supervisors: Prof. Emilio Martínez-Pañeda (Oxford) & Prof. Luwen Zhang (SJTU)
+  * Role: Simulate the accumulation of helium bubbles on grain boundaries and fracture using COMSOL and the fracture phase field method.
+* **Physics-Informed Machine Learning for Fatigue Life Prediction**
+  * Period: Sept. 2022 – Present (as a master's student)
+  * Supervisor: Prof. Luwen Zhang (SJTU)
+  * Role: Proposed an ensemble learning framework facilitating both empirical formulations and machine learning models; proposed a Transformer-based model to consider the lay-up sequences of fiber-reinforced composites; constructed a benchmark platform of machine learning models for tabular prediction in Python.
+  * Outcomes: [Publication in preparation](#pub-2024-piml), [TabularEnsemble](https://github.com/LuoXueling/tabular_ensemble) (A ML model base and benchmark platform), and corresponding [source code and data](https://github.com/LuoXueling/ENSEMBLE/tree/publication).
+* **Fracture Phase Field Method**
+  * Period: Sept. 2021 – Aug. 2022 (as a bachelor's student)
+  * Supervisors: Prof. Luwen Zhang (SJTU) & Prof. Shaofan Li (UC Berkeley)
+  * Role: 
+    * Proposed the data-driven algorithm for the fracture phase field method; implemented the proposed algorithm in MATLAB, based on a traditional 2D/3D finite element solver; validated the proposed algorithm for mode I and mode II fractures of linear elastic and neo-Hookean hyperelastic models.
+    * Participated in the conceptualization, discussions, and revision of an asymptotic-expansion-based multiscale fracture phase field method (lasted to 2024).
+  * Outcomes: [Publication](#pub-2022-data-driven), [Publication](#pub-2024-multiscale)
+* **Explainable Machine Learning in Geology and Medicine**
+  * Period: May. 2021 – Sept. 2022 (as a research intern)
+  * Supervisor: Dr. Zhichao Li (Chinese Academy of Sciences)
+  * Role: Evaluated the impacts of environmental factors on the dispersion of COVID-19 from humans to animals using machine learning; applied explainable machine learning in clinical disease diagnoses.
+* **Morphing Airfoil Design through Topology Optimization**
+  * Period: Sept. 2020 - Nov. 2021 (as a student researcher)
+  * Supervisor: Prof. Wenwang Wu (SJTU)
+  * Role: Performed topology optimization using ABAQUS to obtain a cellular superstructure twisting under pressure; validated the deformation behavior of the superstructure through 3D printing and experiments.
+* **Modeling and Force Analysis of External Piping of Aero-Engine**
+  * Period: Mar. 2020 - Sept. 2020 (as a student researcher)
+  * Supervisor: Prof. Yadong Wu (SJTU)
+  * Role: Proposed the theoretical stress formulation of wire-wrapped pipe using elasticity theory; analyzed burst pressure values of wire-wrapping layers according to the theoretical formulation.
 
-# Awards
+# Honors & Awards
 
-* **National Scholarship** (Top <1% nationwide, The highest honor for students in China) (*Dec. 2023*)
-* **Outstanding Teaching Assistant** (Top 1%) (*Sept. 2023*) 
-* **The second prize in the China Post-Graduate Mathematical Contest in Modeling** (Top 15%)	(*Jan. 2023*)
-* **Excellent Undergraduate Graduation Design (Thesis) of Mechanics Major in National Universities** (2/20)	(*Jul. 2022*)
+* **National Scholarship** (Top <1% nationwide, the highest honor for students in China) (*Dec. 2023*)
+* **Outstanding Teaching Assistant** (Top 1%) (*Sept. 2023*)
+* **Second Prize in the China Post-Graduate Mathematical Contest in Modeling** (Top 15%) (*Jan. 2023*)
+* **Excellent Undergraduate Graduation Design (Thesis) of Mechanics Major in National Universities** (2/20) (*Jul. 2022*)
 * **Regal Lloyds** (华高莱斯) **Scholarship** (2/20) (*Dec. 2021*)
-* **Changshi** (常石) **Scholarship** (3/20) (*Dec. 2020*) 
-* **The second prize in China Undergraduate Mathematical Contest in Modeling** (Top 3.6%)	(*Nov. 2020*)
-* **The second prize in Shanghai Jiao Tong University Structural Design Competition** (2/56)	(*Nov. 2020*)
-* **Wu Yousheng** (吴有生) **Scholarship** (3/20) (*Nov. 2019*) 
+* **Changshi** (常石) **Scholarship** (3/20) (*Dec. 2020*)
+* **Second Prize in China Undergraduate Mathematical Contest in Modeling** (Top 3.6%) (*Nov. 2020*)
+* **Second Prize in Shanghai Jiao Tong University Structural Design Competition** (2/56) (*Nov. 2020*)
+* **Wu Yousheng** (吴有生) **Scholarship** (3/20) (*Nov. 2019*)
 
 # Teaching
 
-* Teaching assistant, Mechanics of Materials (Sophomore) *Mar. 2024 – Jul. 2024*
-* Teaching assistant, Mechanics of Materials (Sophomore) *Mar. 2023 – Jul. 2023*
-* Teaching assistant, Theoretical Mechanics (Sophomore) *Sept. 2022 – Jan. 2023*
+* Teaching Assistant, Mechanics of Materials (Sophomore) *Mar. 2024 – Jul. 2024*
+* Teaching Assistant, Mechanics of Materials (Sophomore) *Mar. 2023 – Jul. 2023*
+* Teaching Assistant, Theoretical Mechanics (Sophomore) *Sept. 2022 – Jan. 2023*
 
 # Skills
 
 * **MATLAB**: 2D and 3D finite element implementation with implicit and explicit solvers for the fracture phase field method
 * **Python**: Machine learning, PyTorch/TensorFlow-based deep learning, OpenMMLab-based computer vision, and data analysis
 * **C++**: 2D/3D finite element implementation for beam structures, dynamics simulation of mechanical structures, and data structure
-* **Mechanical analysis software**: ABAQUS and its secondary development with Python, Ansys and Ansys Fluent, and Adam
+* **Mechanical Analysis Software**: ABAQUS and its secondary development with Python, Ansys and Ansys Fluent, and Adams
+* **Auxiliary Research Skills**: LaTeX, Unix, Git, Docker, Unity, Solidworks, Adobe Illustrator/Photoshop, and Visio
 
-# Standardized tests
+# Languages & Tests
 
+* **Languages**: English and Chinese
 * **TOEFL**: 108 = Reading 30 + Listening 28 + Speaking 25 + Writing 25 (*Jan. 2024*); MyBest score 112 = ... + Writing 29 (*Mar. 2024*)
 * **GRE**: 330 = Verbal 160 + Quant 170 (*Jun. 2024*)
