@@ -10,15 +10,15 @@ redirect_from:
   - /about.html
 ---
 
-🎓 I am currently a master's student at Shanghai Jiao Tong University (SJTU), where I also received my BEng degree. Having published an article on [CMAME](https://www.sciencedirect.com/science/article/pii/S004578252200531X) as the first author and one on [IJNME](https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.7489) as the third author, I am currently preparing another manuscript for Nature Communications. With an aspiration to delve into intriguing and innovative research, **I am looking for a PhD position in the fall term of 2025**.
+🎓 I am currently a master's student at Shanghai Jiao Tong University (SJTU), where I also received my BEng degree. Having published an article on [CMAME](#pub-2022-data-driven) as the first author and one on [IJNME](#pub-2024-multiscale) as the third author, I am currently preparing [another manuscript](#pub-2024-piml) for Nature Communications. With an aspiration to delve into intriguing and innovative research, **I am looking for a PhD position in the fall term of 2025**. (For European universities, I am applying for positions with enrollment times **around April to September**.)
 
-🔫 Besides a fulfilling academic life, I relax by playing badminton🏸 or video games🎮, walking around the campus🚶, drinking a little🍺, and eating half of a watermelon🍉 (2kg maximum).
+🔫 Besides a fulfilling academic life, I relax by playing badminton🏸 or video games🎮, going to the gym🏋️, walking around the campus🚶, drinking a little🍺, and eating half of a watermelon🍉 (2kg maximum).
 
 If you find my Chinese given name Xueling difficult to pronounce ([Google translation](https://translate.google.com/?sl=auto&tl=en&text=%E9%9B%AA%E7%81%B5&op=translate)), you can pronounce Sharrin which sounds similar. My Chinese name, which means snow (雪⛄) and elf (灵🧚), looks and sounds like a girl's name, just like Sharrin.
 
 # Research Interest
 
-My research interests lie in **fracture phase field methods**, **machine learning**, **data-driven computational mechanics**, or more **general computational solid mechanics topics** (depending on the prospective advisor). My current research aims to incorporate data-driven methods into traditional mechanical analysis, such as the finite element method and fatigue life prediction methods, to alleviate empiricism.
+My research interests lie in **fracture phase field methods**, **machine learning**, **data-driven computational mechanics**, or more **general computational solid mechanics topics** (depending on the prospective advisor). My current research aims to incorporate data-driven methods into traditional mechanical analysis, such as the finite element method and fatigue life prediction methods, to complement each other.
 
 # Education
 
@@ -90,6 +90,10 @@ My research interests lie in **fracture phase field methods**, **machine learnin
 * Teaching Assistant, Mechanics of Materials (Sophomore) *Mar. 2023 – Jul. 2023*
 * Teaching Assistant, Theoretical Mechanics (Sophomore) *Sept. 2022 – Jan. 2023*
 
+# Conferences Attended
+* China Computational Mechanics Conference, Dalian, China (Poster: Data-driven-based Fracture Phase Field Method)	*Aug. 2023*
+* National Symposium on Data-driven Computational Mechanics, Dalian, China	*Apr. 2023*
+
 # Skills
 
 * **MATLAB**: 2D and 3D finite element implementation with implicit and explicit solvers for the fracture phase field method
@@ -102,4 +106,4 @@ My research interests lie in **fracture phase field methods**, **machine learnin
 
 * **Languages**: English and Chinese
 * **TOEFL**: 108 = Reading 30 + Listening 28 + Speaking 25 + Writing 25 (*Jan. 2024*); MyBest score 112 = ... + Writing 29 (*Mar. 2024*)
-* **GRE**: 330 = Verbal 160 + Quant 170 (*Jun. 2024*)
+* **GRE**: 330 = Verbal 160 + Quant 170 (*May. 2024*)
