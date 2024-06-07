@@ -39,7 +39,7 @@ My research interests lie in **fracture phase field methods**, **machine learnin
 * Pu‐Song Ma<sup>1</sup>, Xing‐Cheng Liu<sup>1</sup>, **Xue‐Ling Luo**, Shaofan Li, and Lu‐Wen Zhang* . **Asymptotic homogenization of phase‐field fracture model: An efficient multiscale finite element framework for anisotropic fracture**. *International Journal for Numerical Methods in Engineering* (2024): e7489. [[Publisher]](https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.7489) [[ResearchGate]](https://www.researchgate.net/publication/379517633_Asymptotic_homogenization_of_phase-field_fracture_model_An_efficient_multiscale_finite_element_framework_for_anisotropic_fracture)
 
 <a name="pub-2024-piml"></a>
-* (In preparation) **Xue-Ling Luo** and Lu-Wen Zhang* . **ENSEMBLE: Ensembling empirical models and machine learning exemplified by fatigue life extrapolation of fiber-reinforced composites**. 
+* (In preparation) **Xue-Ling Luo** and Lu-Wen Zhang* . **Ensembling empirical models and machine learning: An example of fatigue life prediction of fiber-reinforced composites**. 
 
 # Research Experience
 
