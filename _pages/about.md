@@ -12,9 +12,12 @@ redirect_from:
 
 🎓 I am currently a master's student at Shanghai Jiao Tong University (SJTU), where I also received my BEng degree. Having published an article on [CMAME](#pub-2022-data-driven) as the first author and one on [IJNME](#pub-2024-multiscale) as the third author, I am currently preparing [another manuscript](#pub-2024-piml) for Nature Communications. With an aspiration to delve into intriguing and innovative research, **I am looking for a PhD position in the fall term of 2025**. (For European universities, I am applying for positions with enrollment times **around April to September**.)
 
+I am truly a *programming guy* and sometimes even debug until 4 a.m. On [my GitHub](https://github.com/LuoXueling), you can find various projects I did for research and coursework that demonstrate my programming skills in computational mechanics (and machine learning, some new projects will be released before my new paper is submitted). These include 2D/3D linear-elastic/hyperelastic static/dynamic finite element methods using MATLAB [[GitHub link](https://github.com/LuoXueling/FiniteElementMethodAndQuasicontinuumFracture)] and C++ [[GitHub link](https://github.com/LuoXueling/FiniteElementMethodForBeamAndTrussStructures)], 2D kinematics and dynamics using C++ [[GitHub link](https://github.com/LuoXueling/ComputationalKinematicsDynamicsOfMechanicalSystems)], and 2D steady incompressible flow and Stokes flow using Python [[GitHub link](https://github.com/LuoXueling/ComputationalFluidMechanicsSimpleExamples)]. 
+
+
 🔫 Besides a fulfilling academic life, I relax by playing badminton🏸 or video games🎮, going to the gym🏋️, walking around the campus🚶, drinking a little🍺, and eating half of a watermelon🍉 (2kg maximum).
 
-If you find my Chinese given name Xueling difficult to pronounce ([Google translation](https://translate.google.com/?sl=auto&tl=en&text=%E9%9B%AA%E7%81%B5&op=translate)), you can pronounce Sharrin which sounds similar. My Chinese name, which means snow (雪⛄) and elf (灵🧚), looks and sounds like a girl's name, just like Sharrin.
+If you find my Chinese given name Xueling difficult to pronounce [[Google translation](https://translate.google.com/?sl=auto&tl=en&text=%E9%9B%AA%E7%81%B5&op=translate)], you can pronounce Sharrin which sounds similar. My Chinese name, which means snow (雪⛄) and elf (灵🧚), looks and sounds like a girl's name, just like Sharrin.
 
 # Research Interest
 
@@ -39,7 +42,7 @@ My research interests lie in **fracture phase field methods**, **machine learnin
 * Pu‐Song Ma<sup>1</sup>, Xing‐Cheng Liu<sup>1</sup>, **Xue‐Ling Luo**, Shaofan Li, and Lu‐Wen Zhang* . **Asymptotic homogenization of phase‐field fracture model: An efficient multiscale finite element framework for anisotropic fracture**. *International Journal for Numerical Methods in Engineering* (2024): e7489. [[Publisher]](https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.7489) [[ResearchGate]](https://www.researchgate.net/publication/379517633_Asymptotic_homogenization_of_phase-field_fracture_model_An_efficient_multiscale_finite_element_framework_for_anisotropic_fracture)
 
 <a name="pub-2024-piml"></a>
-* (In preparation) **Xue-Ling Luo** and Lu-Wen Zhang* . **Ensembling empirical models and machine learning: An example of fatigue life prediction of fiber-reinforced composites**. 
+* (In preparation) **Xue-Ling Luo** and Lu-Wen Zhang* . **Ensembling empirical models and machine learning: An example of fatigue life prediction of fiber-reinforced composites**. [Will be uploaded to arXiv before submission]
 
 # Research Experience
 
