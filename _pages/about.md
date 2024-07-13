@@ -46,10 +46,10 @@ My research interests lie in **fracture phase field methods**, **machine learnin
 
 # Research Experience
 
-* (Scheduled) **Fracture Phase Field Method in Helium Embrittlement**
-  * Period: Jul. 2024 - Oct. 2024 (as a research intern)
-  * Supervisors: Prof. Emilio Martínez-Pañeda (Oxford) & Prof. Luwen Zhang (SJTU)
-  * Role: Simulate the accumulation of helium bubbles on grain boundaries and fracture using COMSOL and the fracture phase field method.
+* **Fracture Phase Field Method in Helium Embrittlement**
+  * Period: Jul. 2024 - Present (as a research intern)
+  * Supervisors: Prof. Luwen Zhang (SJTU) & Prof. Emilio Martínez-Pañeda (Oxford)
+  * Role: Propose a fracture phase field method coupled with Helium diffusion and Helium bubbles and simulate it using COMSOL.
 * **Physics-Informed Machine Learning for Fatigue Life Prediction**
   * Period: Sept. 2022 – Present (as a master's student)
   * Supervisor: Prof. Luwen Zhang (SJTU)
@@ -67,11 +67,11 @@ My research interests lie in **fracture phase field methods**, **machine learnin
   * Supervisor: Dr. Zhichao Li (Chinese Academy of Sciences)
   * Role: Evaluated the impacts of environmental factors on the dispersion of COVID-19 from humans to animals using machine learning; applied explainable machine learning in clinical disease diagnoses.
 * **Morphing Airfoil Design through Topology Optimization**
-  * Period: Sept. 2020 - Nov. 2021 (as a student researcher)
+  * Period: Sept. 2020 - Nov. 2021 (as a undergraduate student researcher)
   * Supervisor: Prof. Wenwang Wu (SJTU)
   * Role: Performed topology optimization using ABAQUS to obtain a cellular superstructure twisting under pressure; validated the deformation behavior of the superstructure through 3D printing and experiments.
 * **Modeling and Force Analysis of External Piping of Aero-Engine**
-  * Period: Mar. 2020 - Sept. 2020 (as a student researcher)
+  * Period: Mar. 2020 - Sept. 2020 (as a undergraduate student researcher)
   * Supervisor: Prof. Yadong Wu (SJTU)
   * Role: Proposed the theoretical stress formulation of wire-wrapped pipe using elasticity theory; analyzed burst pressure values of wire-wrapping layers according to the theoretical formulation.
 
@@ -91,6 +91,7 @@ My research interests lie in **fracture phase field methods**, **machine learnin
 
 * Teaching Assistant, Mechanics of Materials (Sophomore) *Mar. 2024 – Jul. 2024*
 * Teaching Assistant, Mechanics of Materials (Sophomore) *Mar. 2023 – Jul. 2023*
+  * Won the Outstanding Teaching Assistant (Top 1%) prize for this work
 * Teaching Assistant, Theoretical Mechanics (Sophomore) *Sept. 2022 – Jan. 2023*
 
 # Conferences Attended
@@ -102,11 +103,11 @@ My research interests lie in **fracture phase field methods**, **machine learnin
 * **MATLAB**: 2D and 3D finite element implementation with implicit and explicit solvers for the fracture phase field method
 * **Python**: Machine learning, PyTorch/TensorFlow-based deep learning, OpenMMLab-based computer vision, and data analysis
 * **C++**: 2D/3D finite element implementation for beam structures, dynamics simulation of mechanical structures, and data structure
-* **Mechanical Analysis Software**: ABAQUS and its secondary development with Python, Ansys and Ansys Fluent, and Adams
+* **Mechanical Analysis Software**: COMSOL, ABAQUS and its secondary development with Python, Ansys and Ansys Fluent, and Adams
 * **Auxiliary Research Skills**: LaTeX, Unix, Git, Docker, Unity, Solidworks, Adobe Illustrator/Photoshop, and Visio
 
 # Languages & Tests
 
 * **Languages**: English and Chinese
-* **TOEFL**: 108 = Reading 30 + Listening 28 + Speaking 25 + Writing 25 (*Jan. 2024*); MyBest score 112 = ... + Writing 29 (*Mar. 2024*)
+* **TOEFL**: 113 = Reading 30 + Listening 30 + Speaking 25 + Writing 28 (*Jul. 2024*)
 * **GRE**: 330 = Verbal 160 + Quant 170 (*May. 2024*)
