@@ -25,10 +25,12 @@ My research interests lie in **fracture phase field methods**, **machine learnin
 
 # Education
 
-* **MEng, Computational Mechanics**, Shanghai Jiao Tong University (*Sept. 2022 - Present*)
+* **MEng, Computational Mechanics**, Shanghai Jiao Tong University 
+  * Sept. 2022 - Present
   * GPA: 3.82/4.0
   * Thesis: Machine-Learning-Based Fatigue Life Prediction of Fiber-Reinforced Composite Materials
 * **BEng, Engineering Mechanics**, Shanghai Jiao Tong University
+  * Sept. 2018 - Jun. 2022
   * GPA: 3.78/4.3 (88.8/100)
   * Thesis: Data-Driven Phase Field Fracture Analysis
   * Minor: AI+X (华东五校AI+X微辅修)
@@ -47,8 +49,8 @@ My research interests lie in **fracture phase field methods**, **machine learnin
 # Research Experience
 
 * **Fracture Phase Field Method in Helium Embrittlement**
-  * Period: Jul. 2024 - Present (as a research intern)
-  * Supervisors: Prof. Luwen Zhang (SJTU) & Prof. Emilio Martínez-Pañeda (Oxford)
+  * Period: Jul. 2024 - Present (as a master's student)
+  * Supervisors: Prof. Luwen Zhang (SJTU)
   * Role: Propose a fracture phase field method coupled with Helium diffusion and Helium bubbles and simulate it using COMSOL.
 * **Physics-Informed Machine Learning for Fatigue Life Prediction**
   * Period: Sept. 2022 – Present (as a master's student)
