@@ -52,13 +52,13 @@ My research interests lie in **fracture phase field methods**, **machine learnin
 
 # Research Experience
 
-* **Acceleration schemes of fracture-phase-field-based fatigue simulation**
+* **Acceleration Schemes of Fracture-phase-field-based Fatigue Simulation**
   * **Period**: Jul. 2024 - Present (as a research intern)
   * **Supervisor**: Prof. Emilio Martínez Pañeda (University of Oxford)
   * **Role**: (Will be the co-1st author) A comparative study on various acceleration methods for fracture phase field simulations of fatigue, implemented using deal.II.
 * **Fracture Phase Field Method in Helium Embrittlement**
   * **Period**: Jul. 2024 - Present (as a master's student)
-  * **Supervisors**: Prof. Luwen Zhang (SJTU)
+  * **Supervisor**: Prof. Luwen Zhang (SJTU)
   * **Role**: (Will be the co-1st author) Propose a fracture phase field method coupled with Helium diffusion and Helium bubbles and simulate it using COMSOL.
 * **Physics-Informed Machine Learning for Fatigue Life Prediction**
   * **Period**: Sept. 2022 – Present (as a master's student)
@@ -70,13 +70,12 @@ My research interests lie in **fracture phase field methods**, **machine learnin
   * **Role**: (3rd author of [Publication](#pub-2024-multiscale)) Participated in the conceptualization, discussions, and revision of an asymptotic-expansion-based multiscale fracture phase field method.
 * **Explainable Machine Learning in Geology and Medicine**
   * **Period**: May. 2022 – Present (as a research intern)
-  * **Supervisor**: Dr. Zhichao Li (Associate research at Chinese Academy of Sciences)
+  * **Supervisor**: Dr. Zhichao Li (Associate research fellow at Chinese Academy of Sciences)
   * **Role**: (2nd author of [Publication in preparation](#pub-2024-gan)) Evaluated the impacts of environmental factors on the dispersion of COVID-19 from humans to animals using machine learning; applied explainable machine learning in clinical disease diagnoses.
 * **Data-driven Fracture Phase Field Method**
   * **Period**: Sept. 2021 – Aug. 2022 (as a bachelor's student)
-  * **Supervisors**: Prof. Luwen Zhang (SJTU)
-  * **Role**: 
-    * (1st author of [Publication](#pub-2022-data-driven)) Proposed the data-driven algorithm for the fracture phase field method; implemented the proposed algorithm in MATLAB, based on a traditional 2D/3D finite element solver; validated the proposed algorithm for mode I and mode II fractures of linear elastic and neo-Hookean hyperelastic models.
+  * **Supervisor**: Prof. Luwen Zhang (SJTU)
+  * **Role**: (1st author of [Publication](#pub-2022-data-driven)) Proposed the data-driven algorithm for the fracture phase field method; implemented the proposed algorithm in MATLAB, based on a traditional 2D/3D finite element solver; validated the proposed algorithm for mode I and mode II fractures of linear elastic and neo-Hookean hyperelastic models.
 * **Morphing Airfoil Design through Topology Optimization**
   * **Period**: Sept. 2020 - Nov. 2021 (as a undergraduate student researcher)
   * **Supervisor**: Prof. Wenwang Wu (SJTU)
