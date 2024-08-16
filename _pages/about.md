@@ -68,14 +68,14 @@ My research interests lie in **fracture phase field methods**, **machine learnin
   * **Period**: Sept. 2022 – Mar. 2024 (as a bachelor's & master's student)
   * **Supervisors**: Prof. Luwen Zhang (SJTU) & Prof. Shaofan Li (UC Berkeley)
   * **Role**: (3rd author of [Publication](#pub-2024-multiscale)) Participated in the conceptualization, discussions, and revision of an asymptotic-expansion-based multiscale fracture phase field method.
-* **Explainable Machine Learning in Geology and Medicine**
-  * **Period**: May. 2022 – Present (as a research intern)
-  * **Supervisor**: Dr. Zhichao Li (Associate research fellow at Chinese Academy of Sciences)
-  * **Role**: (2nd author of [Publication in preparation](#pub-2024-gan)) Evaluated the impacts of environmental factors on the dispersion of COVID-19 from humans to animals using machine learning; applied explainable machine learning in clinical disease diagnoses.
 * **Data-driven Fracture Phase Field Method**
   * **Period**: Sept. 2021 – Aug. 2022 (as a bachelor's student)
   * **Supervisor**: Prof. Luwen Zhang (SJTU)
   * **Role**: (1st author of [Publication](#pub-2022-data-driven)) Proposed the data-driven algorithm for the fracture phase field method; implemented the proposed algorithm in MATLAB, based on a traditional 2D/3D finite element solver; validated the proposed algorithm for mode I and mode II fractures of linear elastic and neo-Hookean hyperelastic models.
+* **Machine Learning & Deep Learning in Geology and Public Health**
+  * **Period**: Jul. 2021 – Present (as a research intern)
+  * **Supervisor**: Dr. Zhichao Li (Associate research fellow at Chinese Academy of Sciences)
+  * **Role**: (2nd author of [Publication in preparation](#pub-2024-gan)) Applied the Generative Adversarial Network in imputation of temporal and spatial dengue data in Brazil; evaluated the impacts of environmental factors on the dispersion of COVID-19 from humans to animals using machine learning; applied explainable machine learning in clinical disease diagnoses.
 * **Morphing Airfoil Design through Topology Optimization**
   * **Period**: Sept. 2020 - Nov. 2021 (as a undergraduate student researcher)
   * **Supervisor**: Prof. Wenwang Wu (SJTU)
