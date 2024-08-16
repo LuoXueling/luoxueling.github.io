@@ -25,11 +25,11 @@ My research interests lie in **fracture phase field methods**, **machine learnin
 
 # Education
 
-* **MEng, Computational Mechanics**, Shanghai Jiao Tong University 
+* **MEng, Computational Mechanics**, Shanghai Jiao Tong University (SJTU) 
   * Sept. 2022 - Present
   * GPA: 3.82/4.0
   * Thesis: Machine-Learning-Based Fatigue Life Prediction of Fiber-Reinforced Composite Materials
-* **BEng, Engineering Mechanics**, Shanghai Jiao Tong University
+* **BEng, Engineering Mechanics**, Shanghai Jiao Tong University (SJTU)
   * Sept. 2018 - Jun. 2022
   * GPA: 3.78/4.3 (88.8/100)
   * Thesis: Data-Driven Phase Field Fracture Analysis
@@ -46,36 +46,45 @@ My research interests lie in **fracture phase field methods**, **machine learnin
 <a name="pub-2024-piml"></a>
 * (In preparation) **Xue-Ling Luo** and Lu-Wen Zhang* . **Ensembling empirical models and machine learning: An example of fatigue life prediction of fiber-reinforced composites**. [Will be uploaded to arXiv before submission]
 
+<a name="pub-2024-gan"></a>
+* (In preparation) Zhichao Li, **Xue-Ling Luo**, Qu Chen, Jun Cai, and Jinwei Dong. **Geospatial cloud computing and deep learning for large-scale infectious disease data reconstruction**. 
+
+
 # Research Experience
 
+* **Acceleration schemes of fracture-phase-field-based fatigue simulation**
+  * **Period**: Jul. 2024 - Present (as a research intern)
+  * **Supervisor**: Prof. Emilio Martínez Pañeda (University of Oxford)
+  * **Role**: (Will be the co-1st author) A comparative study on various acceleration methods for fracture phase field simulations of fatigue, implemented using deal.II.
 * **Fracture Phase Field Method in Helium Embrittlement**
-  * Period: Jul. 2024 - Present (as a master's student)
-  * Supervisors: Prof. Luwen Zhang (SJTU)
-  * Role: Propose a fracture phase field method coupled with Helium diffusion and Helium bubbles and simulate it using COMSOL.
+  * **Period**: Jul. 2024 - Present (as a master's student)
+  * **Supervisors**: Prof. Luwen Zhang (SJTU)
+  * **Role**: (Will be the co-1st author) Propose a fracture phase field method coupled with Helium diffusion and Helium bubbles and simulate it using COMSOL.
 * **Physics-Informed Machine Learning for Fatigue Life Prediction**
-  * Period: Sept. 2022 – Present (as a master's student)
-  * Supervisor: Prof. Luwen Zhang (SJTU)
-  * Role: Proposed an ensemble learning framework facilitating both empirical formulations and machine learning models; proposed a Transformer-based model to consider the lay-up sequences of fiber-reinforced composites; constructed a benchmark platform of machine learning models for tabular prediction in Python.
-  * Outcomes: [Publication in preparation](#pub-2024-piml), [TabularEnsemble](https://github.com/LuoXueling/tabular_ensemble) (A ML model base and benchmark platform), and corresponding [source code and data](https://github.com/LuoXueling/ENSEMBLE/tree/publication).
-* **Fracture Phase Field Method**
-  * Period: Sept. 2021 – Aug. 2022 (as a bachelor's student)
-  * Supervisors: Prof. Luwen Zhang (SJTU) & Prof. Shaofan Li (UC Berkeley)
-  * Role: 
-    * Proposed the data-driven algorithm for the fracture phase field method; implemented the proposed algorithm in MATLAB, based on a traditional 2D/3D finite element solver; validated the proposed algorithm for mode I and mode II fractures of linear elastic and neo-Hookean hyperelastic models.
-    * Participated in the conceptualization, discussions, and revision of an asymptotic-expansion-based multiscale fracture phase field method (lasted to 2024).
-  * Outcomes: [Publication](#pub-2022-data-driven), [Publication](#pub-2024-multiscale)
+  * **Period**: Sept. 2022 – Present (as a master's student)
+  * **Supervisor**: Prof. Luwen Zhang (SJTU)
+  * **Role**: (1st author of [Publication in preparation](#pub-2024-piml)) Proposed an ensemble learning framework facilitating both empirical formulations and machine learning models ([Source code and data](https://github.com/LuoXueling/ENSEMBLE/tree/publication) that will be released before submission); proposed a Transformer-based model to consider the lay-up sequences of fiber-reinforced composites; constructed a benchmark platform of machine learning models for tabular prediction in Python ([TabularEnsemble](https://github.com/LuoXueling/tabular_ensemble)).
+* **Multiscale Fracture Phase Field Method**
+  * **Period**: Sept. 2022 – Mar. 2024 (as a bachelor's & master's student)
+  * **Supervisors**: Prof. Luwen Zhang (SJTU) & Prof. Shaofan Li (UC Berkeley)
+  * **Role**: (3rd author of [Publication](#pub-2024-multiscale)) Participated in the conceptualization, discussions, and revision of an asymptotic-expansion-based multiscale fracture phase field method.
 * **Explainable Machine Learning in Geology and Medicine**
-  * Period: May. 2021 – Sept. 2022 (as a research intern)
-  * Supervisor: Dr. Zhichao Li (Chinese Academy of Sciences)
-  * Role: Evaluated the impacts of environmental factors on the dispersion of COVID-19 from humans to animals using machine learning; applied explainable machine learning in clinical disease diagnoses.
+  * **Period**: May. 2022 – Present (as a research intern)
+  * **Supervisor**: Dr. Zhichao Li (Associate research at Chinese Academy of Sciences)
+  * **Role**: (2nd author of [Publication in preparation](#pub-2024-gan)) Evaluated the impacts of environmental factors on the dispersion of COVID-19 from humans to animals using machine learning; applied explainable machine learning in clinical disease diagnoses.
+* **Data-driven Fracture Phase Field Method**
+  * **Period**: Sept. 2021 – Aug. 2022 (as a bachelor's student)
+  * **Supervisors**: Prof. Luwen Zhang (SJTU)
+  * **Role**: 
+    * (1st author of [Publication](#pub-2022-data-driven)) Proposed the data-driven algorithm for the fracture phase field method; implemented the proposed algorithm in MATLAB, based on a traditional 2D/3D finite element solver; validated the proposed algorithm for mode I and mode II fractures of linear elastic and neo-Hookean hyperelastic models.
 * **Morphing Airfoil Design through Topology Optimization**
-  * Period: Sept. 2020 - Nov. 2021 (as a undergraduate student researcher)
-  * Supervisor: Prof. Wenwang Wu (SJTU)
-  * Role: Performed topology optimization using ABAQUS to obtain a cellular superstructure twisting under pressure; validated the deformation behavior of the superstructure through 3D printing and experiments.
+  * **Period**: Sept. 2020 - Nov. 2021 (as a undergraduate student researcher)
+  * **Supervisor**: Prof. Wenwang Wu (SJTU)
+  * **Role**: Performed topology optimization using ABAQUS to obtain a cellular superstructure twisting under pressure; validated the deformation behavior of the superstructure through 3D printing and experiments.
 * **Modeling and Force Analysis of External Piping of Aero-Engine**
-  * Period: Mar. 2020 - Sept. 2020 (as a undergraduate student researcher)
-  * Supervisor: Prof. Yadong Wu (SJTU)
-  * Role: Proposed the theoretical stress formulation of wire-wrapped pipe using elasticity theory; analyzed burst pressure values of wire-wrapping layers according to the theoretical formulation.
+  * **Period**: Mar. 2020 - Sept. 2020 (as a undergraduate student researcher)
+  * **Supervisor**: Prof. Yadong Wu (SJTU)
+  * **Role**: Proposed the theoretical stress formulation of wire-wrapped pipe using elasticity theory; analyzed burst pressure values of wire-wrapping layers according to the theoretical formulation.
 
 # Honors & Awards
 
@@ -104,7 +113,7 @@ My research interests lie in **fracture phase field methods**, **machine learnin
 
 * **MATLAB**: 2D and 3D finite element implementation with implicit and explicit solvers for the fracture phase field method
 * **Python**: Machine learning, PyTorch/TensorFlow-based deep learning, OpenMMLab-based computer vision, and data analysis
-* **C++**: 2D/3D finite element implementation for beam structures, dynamics simulation of mechanical structures, and data structure
+* **C++**: deal.II, 2D/3D finite element implementation for beam structures, dynamics simulation of mechanical structures
 * **Mechanical Analysis Software**: COMSOL, ABAQUS and its secondary development with Python, Ansys and Ansys Fluent, and Adams
 * **Auxiliary Research Skills**: LaTeX, Unix, Git, Docker, Unity, Solidworks, Adobe Illustrator/Photoshop, and Visio
 
