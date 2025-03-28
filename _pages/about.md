@@ -10,25 +10,28 @@ redirect_from:
   - /about.html
 ---
 
-🎓 I am currently a master's student at Shanghai Jiao Tong University (SJTU), where I also received my BEng degree. Having published an article on [CMAME](#pub-2022-data-driven) as the first author and one on [IJNME](#pub-2024-multiscale) as the third author, I am currently preparing [another manuscript](#pub-2024-piml) for Nature Communications. With an aspiration to delve into intriguing and innovative research, **I am looking for a PhD position in the fall term of 2025**. (For European universities, I am applying for positions with enrollment times **around April to September**.)
+🎓 I will be a Ph.D. student at Cornell University in August, 2025, working with Prof. Nikolaos Bouklas. Previously, I have received B.Eng. and M.Eng. from Shanghai Jiao Tong University (SJTU). I have published an article on [CMAME](#pub-2022-data-driven) as the first author, the other one on [IJNME](#pub-2024-multiscale) as the third author, and have submitted [a manuscript](#pub-2024-piml) to npj *Computational Materials*. 
 
-I am truly a *programming guy* and sometimes even debug until 4 a.m. On [my GitHub](https://github.com/LuoXueling), you can find various projects I did for research and coursework that demonstrate my programming skills in computational mechanics (and machine learning, some new projects will be released before my new paper is submitted). These include 2D/3D linear-elastic/hyperelastic static/dynamic finite element methods using MATLAB [[GitHub link](https://github.com/LuoXueling/FiniteElementMethodAndQuasicontinuumFracture)] and C++ [[GitHub link](https://github.com/LuoXueling/FiniteElementMethodForBeamAndTrussStructures)], 2D kinematics and dynamics using C++ [[GitHub link](https://github.com/LuoXueling/ComputationalKinematicsDynamicsOfMechanicalSystems)], and 2D steady incompressible flow and Stokes flow using Python [[GitHub link](https://github.com/LuoXueling/ComputationalFluidMechanicsSimpleExamples)]. 
-
-
-🔫 Besides a fulfilling academic life, I relax by playing badminton🏸 or video games🎮, going to the gym🏋️, walking around the campus🚶, drinking a little🍺, and eating half of a watermelon🍉 (2kg maximum).
+🔫 Besides a fulfilling academic life, I relax by playing badminton🏸 or video games🎮, taking photographs using my Fujifilm📷, going to the gym🏋️, walking around the campus🚶, drinking a little🍺, and eating half of a watermelon🍉 (2kg maximum).
 
 If you find my Chinese given name Xueling difficult to pronounce [[Google translation](https://translate.google.com/?sl=auto&tl=en&text=%E9%9B%AA%E7%81%B5&op=translate)], you can pronounce Sharrin which sounds similar. My Chinese name, which means snow (雪⛄) and elf (灵🧚), looks and sounds like a girl's name, just like Sharrin.
 
 # Research Interest
 
-My research interests lie in **fracture phase field methods**, **machine learning**, **data-driven computational mechanics**, or more **general computational solid mechanics topics** (depending on the prospective advisor). My current research aims to incorporate data-driven methods into traditional mechanical analysis, such as the finite element method and fatigue life prediction methods, to complement each other.
+My research interests lie in **fracture phase field methods**, **machine learning**, **data-driven computational mechanics**, or more **general computational solid mechanics topics**. My current research aims to incorporate data-driven methods into traditional mechanical analysis, such as the finite element method and fatigue life prediction methods, to complement each other.
+
+I am truly a *programming guy* and sometimes even debug until 4 a.m. On [my GitHub](https://github.com/LuoXueling), you can find various projects I did for research and coursework that demonstrate my programming skills in computational mechanics and machine learning. Regarding computational mechanics, I have released GitHub repositories for 2D/3D linear-elastic/hyperelastic static/dynamic finite element methods using MATLAB [[GitHub link](https://github.com/LuoXueling/FiniteElementMethodAndQuasicontinuumFracture)] and C++ [[GitHub link](https://github.com/LuoXueling/FiniteElementMethodForBeamAndTrussStructures)], 2D kinematics and dynamics using C++ [[GitHub link](https://github.com/LuoXueling/ComputationalKinematicsDynamicsOfMechanicalSystems)], and 2D steady incompressible flow and Stokes flow using Python [[GitHub link](https://github.com/LuoXueling/ComputationalFluidMechanicsSimpleExamples)]. Regarding machine learning, I have open-sourced a machine learning platform named TabularEnsemble [[GitHub link](https://github.com/LuoXueling/tabular_ensemble)]. 
 
 # Education
 
+* **Ph.D. student, Mechanical Engineering**, Cornell University
+  * Starting in Aug. 2025
+  * Advisor: Prof. Nikolaos Bouklas
 * **MEng, Computational Mechanics**, Shanghai Jiao Tong University (SJTU) 
-  * Sept. 2022 - Present
+  * Sept. 2022 - Mar. 2025
   * GPA: 3.82/4.0
   * Thesis: Machine-Learning-Based Fatigue Life Prediction of Fiber-Reinforced Composite Materials
+  * Advisor: Prof. Lu-Wen Zhang
 * **BEng, Engineering Mechanics**, Shanghai Jiao Tong University (SJTU)
   * Sept. 2018 - Jun. 2022
   * GPA: 3.78/4.3 (88.8/100)
@@ -40,14 +43,16 @@ My research interests lie in **fracture phase field methods**, **machine learnin
 <a name="pub-2022-data-driven"></a>
 * **Xue-Ling Luo**, Jia-Yu Ye, Pu-Song Ma, and Lu-Wen Zhang* . **Data-driven enhanced phase field models for highly accurate prediction of Mode I and Mode II fracture**. *Computer Methods in Applied Mechanics and Engineering 400* (2022): 115535. [[Publisher]](https://www.sciencedirect.com/science/article/pii/S004578252200531X) [[ResearchGate]](https://www.researchgate.net/publication/363156166_Data-driven_enhanced_phase_field_models_for_highly_accurate_prediction_of_Mode_I_and_Mode_II_fracture)
 
+<a name="pub-2024-piml"></a>
+* (Submitted to npj *Computational Materials*) **Xue-Ling Luo**, Chen-Cheng Lyu, and Lu-Wen Zhang* . **Physics-informed ensemble learning for robustly extrapolating and
+revealing fatigue life of composites**. 
+
 <a name="pub-2024-multiscale"></a>
 * Pu‐Song Ma<sup>1</sup>, Xing‐Cheng Liu<sup>1</sup>, **Xue‐Ling Luo**, Shaofan Li, and Lu‐Wen Zhang* . **Asymptotic homogenization of phase‐field fracture model: An efficient multiscale finite element framework for anisotropic fracture**. *International Journal for Numerical Methods in Engineering* (2024): e7489. [[Publisher]](https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.7489) [[ResearchGate]](https://www.researchgate.net/publication/379517633_Asymptotic_homogenization_of_phase-field_fracture_model_An_efficient_multiscale_finite_element_framework_for_anisotropic_fracture)
 
-<a name="pub-2024-piml"></a>
-* (In preparation) **Xue-Ling Luo** and Lu-Wen Zhang* . **Ensembling empirical models and machine learning: An example of fatigue life prediction of fiber-reinforced composites**. [Will be uploaded to arXiv before submission]
-
 <a name="pub-2024-gan"></a>
 * (In preparation) Zhichao Li, **Xue-Ling Luo**, Qu Chen, Jun Cai, and Jinwei Dong. **Geospatial cloud computing and deep learning for large-scale infectious disease data reconstruction**. 
+
 
 
 # Research Experience
@@ -63,7 +68,7 @@ My research interests lie in **fracture phase field methods**, **machine learnin
 * **Physics-Informed Machine Learning for Fatigue Life Prediction**
   * **Period**: Sept. 2022 – Present (as a master's student)
   * **Supervisor**: Prof. Luwen Zhang (SJTU)
-  * **Role**: (1st author of [Publication in preparation](#pub-2024-piml)) Proposed an ensemble learning framework facilitating both empirical formulations and machine learning models ([Source code and data](https://github.com/LuoXueling/ENSEMBLE/tree/publication) that will be released before submission); proposed a Transformer-based model to consider the lay-up sequences of fiber-reinforced composites; constructed a benchmark platform of machine learning models for tabular prediction in Python ([TabularEnsemble](https://github.com/LuoXueling/tabular_ensemble)).
+  * **Role**: (1st author of [Publication submitted](#pub-2024-piml)) Proposed an ensemble learning framework facilitating both empirical formulations and machine learning models ([Source code and data](https://github.com/LuoXueling/ENSEMBLE/tree/publication) that will be released before submission); proposed a Transformer-based model to consider the lay-up sequences of fiber-reinforced composites; constructed a benchmark platform of machine learning models for tabular prediction in Python ([TabularEnsemble](https://github.com/LuoXueling/tabular_ensemble)).
 * **Multiscale Fracture Phase Field Method**
   * **Period**: Sept. 2022 – Mar. 2024 (as a bachelor's & master's student)
   * **Supervisors**: Prof. Luwen Zhang (SJTU) & Prof. Shaofan Li (UC Berkeley)
