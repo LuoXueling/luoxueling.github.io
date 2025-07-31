@@ -10,11 +10,11 @@ redirect_from:
   - /about.html
 ---
 
-🎓 I will be a Ph.D. student at Cornell University in August, 2025, working with Prof. Nikolaos Bouklas. Previously, I have received B.Eng. and M.Eng. from Shanghai Jiao Tong University (SJTU). I have published an article on [CMAME](#pub-2022-data-driven) as the first author, the other one on [IJNME](#pub-2024-multiscale) as the third author, and have submitted [a manuscript](#pub-2024-piml) to npj *Computational Materials*. 
+🎓 I will be a Ph.D. student at Cornell University in August, 2025, working with Prof. Nikolaos Bouklas. Previously, I have received B.Eng. and M.Eng. from Shanghai Jiao Tong University (SJTU). I have published an article on [CMAME](#pub-2022-data-driven) as the first author, the other one on [IJNME](#pub-2024-multiscale) as the third author, and a latest [manuscript](#pub-2024-piml) accepted by *Composites Science and Technology*. 
 
 🔫 Besides a fulfilling academic life, I relax by playing badminton🏸 or video games🎮, taking photographs using my Fujifilm📷, going to the gym🏋️, walking around the campus🚶, drinking a little🍺, and eating half of a watermelon🍉 (2kg maximum).
 
-If you find my Chinese given name Xueling difficult to pronounce [[Google translation](https://translate.google.com/?sl=auto&tl=en&text=%E9%9B%AA%E7%81%B5&op=translate)], you can pronounce Sharrin which sounds similar. My Chinese name, which means snow (雪⛄) and elf (灵🧚), looks and sounds like a girl's name, just like Sharrin.
+If you find my Chinese given name Xueling difficult to pronounce [[Google translation](https://translate.google.com/?sl=auto&tl=en&text=%E9%9B%AA%E7%81%B5&op=translate)], you can pronounce Sterling which sounds similar. My Chinese given name, which means snow (雪⛄) and elf (灵🧚), looks and sounds like a girl's name.
 
 # Research Interest
 
@@ -40,12 +40,11 @@ I am truly a *programming guy* and sometimes even debug until 4 a.m. On [my GitH
 
 # Publications
 
+<a name="pub-2024-piml"></a>
+* **Xue-Ling Luo**, Cheng-Cheng Lyu, and Lu-Wen Zhang* . **Physics-informed ensemble learning for robustly extrapolating and revealing fatigue life of composites**. *Composites Science and Technology* (2025): 111302. (Accepted and in production)
+
 <a name="pub-2022-data-driven"></a>
 * **Xue-Ling Luo**, Jia-Yu Ye, Pu-Song Ma, and Lu-Wen Zhang* . **Data-driven enhanced phase field models for highly accurate prediction of Mode I and Mode II fracture**. *Computer Methods in Applied Mechanics and Engineering 400* (2022): 115535. [[Publisher]](https://www.sciencedirect.com/science/article/pii/S004578252200531X) [[ResearchGate]](https://www.researchgate.net/publication/363156166_Data-driven_enhanced_phase_field_models_for_highly_accurate_prediction_of_Mode_I_and_Mode_II_fracture)
-
-<a name="pub-2024-piml"></a>
-* (Submitted to npj *Computational Materials*) **Xue-Ling Luo**, Chen-Cheng Lyu, and Lu-Wen Zhang* . **Physics-informed ensemble learning for robustly extrapolating and
-revealing fatigue life of composites**. 
 
 <a name="pub-2024-multiscale"></a>
 * Pu‐Song Ma<sup>1</sup>, Xing‐Cheng Liu<sup>1</sup>, **Xue‐Ling Luo**, Shaofan Li, and Lu‐Wen Zhang* . **Asymptotic homogenization of phase‐field fracture model: An efficient multiscale finite element framework for anisotropic fracture**. *International Journal for Numerical Methods in Engineering* (2024): e7489. [[Publisher]](https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.7489) [[ResearchGate]](https://www.researchgate.net/publication/379517633_Asymptotic_homogenization_of_phase-field_fracture_model_An_efficient_multiscale_finite_element_framework_for_anisotropic_fracture)
