@@ -10,7 +10,7 @@ redirect_from:
   - /about.html
 ---
 
-🎓 I will be a Ph.D. student at Cornell University in August, 2025, working with Prof. Nikolaos Bouklas. Previously, I have received B.Eng. and M.Eng. from Shanghai Jiao Tong University (SJTU). I have published an article on [CMAME](#pub-2022-data-driven) as the first author, the other one on [IJNME](#pub-2024-multiscale) as the third author, and a latest [paper on *Composites Science and Technology*](#pub-2024-piml). 
+🎓 I am a Ph.D. student at Cornell University in August, 2025, working with Prof. Nikolaos Bouklas. Previously, I have received B.Eng. and M.Eng. from Shanghai Jiao Tong University (SJTU). I have published an article on [CMAME](#pub-2022-data-driven) as the first author, the other one on [IJNME](#pub-2024-multiscale) as the third author, and a latest [paper on *Composites Science and Technology*](#pub-2024-piml). 
 
 🔫 Besides a fulfilling academic life, I relax by playing badminton🏸 or video games🎮, taking photographs using my Fujifilm📷, going to the gym🏋️, walking around the campus🚶, drinking a little🍺, and eating half of a watermelon🍉 (2kg maximum).
 
@@ -25,14 +25,14 @@ I am truly a *programming guy* and sometimes even debug until 4 a.m. On [my GitH
 # Education
 
 * **Ph.D. student, Mechanical Engineering**, Cornell University
-  * Starting in Aug. 2025
+  * Aug. 2025 - Present
   * Advisor: Prof. Nikolaos Bouklas
-* **MEng, Computational Mechanics**, Shanghai Jiao Tong University (SJTU) 
+* **M.Eng. (Research-based), Computational Mechanics**, Shanghai Jiao Tong University (SJTU) 
   * Sept. 2022 - Mar. 2025
   * GPA: 3.82/4.0
   * Thesis: Machine-Learning-Based Fatigue Life Prediction of Fiber-Reinforced Composite Materials
   * Advisor: Prof. Lu-Wen Zhang
-* **BEng, Engineering Mechanics**, Shanghai Jiao Tong University (SJTU)
+* **B.Eng., Engineering Mechanics**, Shanghai Jiao Tong University (SJTU)
   * Sept. 2018 - Jun. 2022
   * GPA: 3.78/4.3 (88.8/100)
   * Thesis: Data-Driven Phase Field Fracture Analysis
@@ -57,11 +57,11 @@ I am truly a *programming guy* and sometimes even debug until 4 a.m. On [my GitH
   * **Supervisor**: Prof. Emilio Martínez Pañeda (University of Oxford)
   * **Role**: (Will be the co-1st author) A comparative study on various acceleration methods for fracture phase field simulations of fatigue, implemented using deal.II.
 * **Fracture Phase Field Method in Helium Embrittlement**
-  * **Period**: Jul. 2024 - Present (as a master's student)
+  * **Period**: Jul. 2024 - Mar. 2025 (as a master's student)
   * **Supervisor**: Prof. Luwen Zhang (SJTU)
   * **Role**: (Will be the co-1st author) Propose a fracture phase field method coupled with Helium diffusion and Helium bubbles and simulate it using COMSOL.
 * **Physics-Informed Machine Learning for Fatigue Life Prediction**
-  * **Period**: Sept. 2022 – Present (as a master's student)
+  * **Period**: Sept. 2022 – Mar. 2025 (as a master's student)
   * **Supervisor**: Prof. Luwen Zhang (SJTU)
   * **Role**: (1st author of [Publication submitted](#pub-2024-piml)) Proposed an ensemble learning framework facilitating both empirical formulations and machine learning models ([Source code and data](https://github.com/LuoXueling/ENSEMBLE/tree/publication) that will be released before submission); proposed a Transformer-based model to consider the lay-up sequences of fiber-reinforced composites; constructed a benchmark platform of machine learning models for tabular prediction in Python ([TabularEnsemble](https://github.com/LuoXueling/tabular_ensemble)).
 * **Multiscale Fracture Phase Field Method**
@@ -73,7 +73,7 @@ I am truly a *programming guy* and sometimes even debug until 4 a.m. On [my GitH
   * **Supervisor**: Prof. Luwen Zhang (SJTU)
   * **Role**: (1st author of [Publication](#pub-2022-data-driven)) Proposed the data-driven algorithm for the fracture phase field method; implemented the proposed algorithm in MATLAB, based on a traditional 2D/3D finite element solver; validated the proposed algorithm for mode I and mode II fractures of linear elastic and neo-Hookean hyperelastic models.
 * **Machine Learning & Deep Learning in Geology and Public Health**
-  * **Period**: Jul. 2021 – Present (as a research intern)
+  * **Period**: Jul. 2021 – Jul. 2025 (as a research intern)
   * **Supervisor**: Dr. Zhichao Li (Associate research fellow at Chinese Academy of Sciences)
   * **Role**: (2nd author of [Publication in preparation](#pub-2024-gan)) Applied the Generative Adversarial Network in imputation of temporal and spatial dengue data in Brazil; evaluated the impacts of environmental factors on the dispersion of COVID-19 from humans to animals using machine learning; applied explainable machine learning in clinical disease diagnoses.
 * **Morphing Airfoil Design through Topology Optimization**
