@@ -10,7 +10,7 @@ redirect_from:
   - /about.html
 ---
 
-🎓 I am a Ph.D. student at Cornell University in August, 2025, working with Prof. Nikolaos Bouklas. Previously, I have received B.Eng. and M.Eng. from Shanghai Jiao Tong University (SJTU). I have published an article on [CMAME](#pub-2022-data-driven) as the first author, the other one on [IJNME](#pub-2024-multiscale) as the third author, and a latest [paper on *Composites Science and Technology*](#pub-2024-piml). 
+🎓 I am a Ph.D. student at Cornell University in August, 2025, working with Prof. Nikolaos Bouklas. Previously, I have received B.Eng. and M.Eng. from Shanghai Jiao Tong University (SJTU). 
 
 🔫 Besides a fulfilling academic life, I relax by playing badminton🏸 or video games🎮, taking photographs using my Fujifilm📷, going to the gym🏋️, walking around the campus🚶, drinking a little🍺, and eating half of a watermelon🍉 (2kg maximum).
 
@@ -18,21 +18,19 @@ If you find my Chinese given name Xueling difficult to pronounce [[Google transl
 
 # Research Interest
 
-My research interests lie in **fracture phase field methods**, **machine learning**, **data-driven computational mechanics**, or more **general computational solid mechanics topics**. My current research aims to incorporate data-driven methods into traditional mechanical analysis, such as the finite element method and fatigue life prediction methods, to complement each other.
-
-I am truly a *programming guy* and sometimes even debug until 4 a.m. On [my GitHub](https://github.com/LuoXueling), you can find various projects I did for research and coursework that demonstrate my programming skills in computational mechanics and machine learning. Regarding computational mechanics, I have released GitHub repositories for 2D/3D linear-elastic/hyperelastic static/dynamic finite element methods using MATLAB [[GitHub link](https://github.com/LuoXueling/FiniteElementMethodAndQuasicontinuumFracture)] and C++ [[GitHub link](https://github.com/LuoXueling/FiniteElementMethodForBeamAndTrussStructures)], 2D kinematics and dynamics using C++ [[GitHub link](https://github.com/LuoXueling/ComputationalKinematicsDynamicsOfMechanicalSystems)], and 2D steady incompressible flow and Stokes flow using Python [[GitHub link](https://github.com/LuoXueling/ComputationalFluidMechanicsSimpleExamples)]. Regarding machine learning, I have open-sourced a machine learning platform named TabularEnsemble [[GitHub link](https://github.com/LuoXueling/tabular_ensemble)]. 
+My research interests lie in **optimization in computational solid mechanics**, **machine learning**, **fracture phase field methods**, and **data-driven computational mechanics**. My current research aims to optimize material distribution and topology simultaneously.
 
 # Education
 
-* **Ph.D. student, Mechanical Engineering**, Cornell University
+* **Ph.D. student, Cornell University**, Mechanical Engineering
   * Aug. 2025 - Present
   * Advisor: Prof. Nikolaos Bouklas
-* **M.Eng. (Research-based), Computational Mechanics**, Shanghai Jiao Tong University (SJTU) 
+* **M.Eng. (Research-based), Shanghai Jiao Tong University (SJTU)**, Computational Mechanics
   * Sept. 2022 - Mar. 2025
   * GPA: 3.82/4.0
   * Thesis: Machine-Learning-Based Fatigue Life Prediction of Fiber-Reinforced Composite Materials
   * Advisor: Prof. Lu-Wen Zhang
-* **B.Eng., Engineering Mechanics**, Shanghai Jiao Tong University (SJTU)
+* **B.Eng., Shanghai Jiao Tong University (SJTU)**, Engineering Mechanics
   * Sept. 2018 - Jun. 2022
   * GPA: 3.78/4.3 (88.8/100)
   * Thesis: Data-Driven Phase Field Fracture Analysis
@@ -41,13 +39,21 @@ I am truly a *programming guy* and sometimes even debug until 4 a.m. On [my GitH
 # Publications
 
 <a name="pub-2024-piml"></a>
-* **Xue-Ling Luo**, Cheng-Cheng Lyu, and Lu-Wen Zhang* . **Physics-informed ensemble learning for robustly extrapolating and revealing fatigue life of composites**. *Composites Science and Technology* (2025): 111302. [[Publisher]](https://www.sciencedirect.com/science/article/pii/S0266353825002702)
+* **Xue-Ling Luo**, Cheng-Cheng Lyu, and Lu-Wen Zhang* . **Physics-informed ensemble learning for robustly extrapolating and revealing fatigue life of composites**. *Composites Science and Technology* (2025): 111302. [[Publisher]](https://www.sciencedirect.com/science/article/pii/S0266353825002702) [[ResearchGate]](https://www.researchgate.net/publication/395003907_Physics-informed_ensemble_learning_for_robustly_extrapolating_and_revealing_fatigue_life_of_composites)
 
 <a name="pub-2022-data-driven"></a>
 * **Xue-Ling Luo**, Jia-Yu Ye, Pu-Song Ma, and Lu-Wen Zhang* . **Data-driven enhanced phase field models for highly accurate prediction of Mode I and Mode II fracture**. *Computer Methods in Applied Mechanics and Engineering 400* (2022): 115535. [[Publisher]](https://www.sciencedirect.com/science/article/pii/S004578252200531X) [[ResearchGate]](https://www.researchgate.net/publication/363156166_Data-driven_enhanced_phase_field_models_for_highly_accurate_prediction_of_Mode_I_and_Mode_II_fracture)
 
 <a name="pub-2024-multiscale"></a>
 * Pu‐Song Ma<sup>1</sup>, Xing‐Cheng Liu<sup>1</sup>, **Xue‐Ling Luo**, Shaofan Li, and Lu‐Wen Zhang* . **Asymptotic homogenization of phase‐field fracture model: An efficient multiscale finite element framework for anisotropic fracture**. *International Journal for Numerical Methods in Engineering* (2024): e7489. [[Publisher]](https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.7489) [[ResearchGate]](https://www.researchgate.net/publication/379517633_Asymptotic_homogenization_of_phase-field_fracture_model_An_efficient_multiscale_finite_element_framework_for_anisotropic_fracture)
+
+# Open-source projects
+
+I am truly a *programming guy* and sometimes even debug until 4 a.m. On [my GitHub](https://github.com/LuoXueling), you can find various projects I did for research and coursework that demonstrate my programming skills in computational mechanics and machine learning. 
+
+* Regarding computational mechanics, I have released GitHub repositories for 2D/3D linear-elastic/hyperelastic static/dynamic finite element methods using MATLAB [[GitHub link](https://github.com/LuoXueling/FiniteElementMethodAndQuasicontinuumFracture)] and C++ [[GitHub link](https://github.com/LuoXueling/FiniteElementMethodForBeamAndTrussStructures)], 2D kinematics and dynamics using C++ [[GitHub link](https://github.com/LuoXueling/ComputationalKinematicsDynamicsOfMechanicalSystems)], and 2D steady incompressible flow and Stokes flow using Python [[GitHub link](https://github.com/LuoXueling/ComputationalFluidMechanicsSimpleExamples)]. 
+
+* Regarding machine learning, I have open-sourced a machine learning platform named TabularEnsemble [[GitHub link](https://github.com/LuoXueling/tabular_ensemble)]. 
 
 
 # Research Experience
@@ -111,8 +117,8 @@ I am truly a *programming guy* and sometimes even debug until 4 a.m. On [my GitH
 # Skills
 
 * **MATLAB**: 2D and 3D finite element implementation with implicit and explicit solvers for the fracture phase field method
-* **Python**: Machine learning, PyTorch/TensorFlow-based deep learning, OpenMMLab-based computer vision, and data analysis
-* **C++**: deal.II, 2D/3D finite element implementation for beam structures, dynamics simulation of mechanical structures
+* **Python**: Machine learning, PyTorch/TensorFlow-based deep learning, OpenMMLab-based computer vision, FEniCS-based finite element, and data analysis
+* **C++**: deal.II-based finite element, 2D/3D finite element implementation for beam structures, dynamics simulation of mechanical structures
 * **Mechanical Analysis Software**: COMSOL, ABAQUS and its secondary development with Python, Ansys and Ansys Fluent, and Adams
 * **Auxiliary Research Skills**: LaTeX, Unix, Git, Docker, Unity, Solidworks, Adobe Illustrator/Photoshop, and Visio
 
