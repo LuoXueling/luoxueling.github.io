@@ -10,7 +10,7 @@ redirect_from:
   - /about.html
 ---
 
-🎓 I am a Ph.D. student at Cornell University in August, 2025, working with Prof. Nikolaos Bouklas. Previously, I have received B.Eng. and M.Eng. from Shanghai Jiao Tong University (SJTU). 
+🎓 I am a Ph.D. student at Cornell University in August, 2025, working with [Prof. Nikolaos Bouklas](https://blogs.cornell.edu/bouklaslab/group/). Previously, I have received B.Eng. and M.Eng. from Shanghai Jiao Tong University (SJTU). 
 
 🔫 Besides a fulfilling academic life, I relax by playing badminton🏸 or video games🎮, taking photographs using my Fujifilm📷, going to the gym🏋️, walking around the campus🚶, drinking a little🍺, and eating half of a watermelon🍉 (2kg maximum).
 
@@ -18,7 +18,7 @@ If you find my Chinese given name Xueling difficult to pronounce [[Google transl
 
 # Research Interest
 
-My research interests lie in **optimization in computational solid mechanics**, **machine learning**, **fracture phase field methods**, and **data-driven computational mechanics**. My current research aims to optimize material distribution and topology simultaneously.
+My research interests currently lie in **machine learning for mechanics**, **adjoint state method**, **optimization**, **GPU computing**. I have rich experience in **fracture phase field methods**, **data-driven computational mechanics**, and **physics-informed machine learning**.
 
 # Education
 
