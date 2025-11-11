@@ -58,6 +58,12 @@ I am truly a *programming guy* and sometimes even debug until 4 a.m. On [my GitH
 
 # Research Experience
 
+* **Optimization of digital material distribution**
+  * **Period**: Aug. 2025 - Present (as a PhD student)
+  * **Supervisor**: Prof. Nikolaos Bouklas (Cornell University)
+* **Shape optimization via deep representations of Signed Distance Function**
+  * **Period**: Sept. 2025 - Present (as a PhD student)
+  * **Supervisor**: Prof. Nikolaos Bouklas (Cornell University)
 * **Acceleration Schemes of Fracture-phase-field-based Fatigue Simulation**
   * **Period**: Jul. 2024 - Present (as a research intern)
   * **Supervisor**: Prof. Emilio Martínez Pañeda (University of Oxford)
@@ -81,15 +87,15 @@ I am truly a *programming guy* and sometimes even debug until 4 a.m. On [my GitH
 * **Machine Learning & Deep Learning in Geology and Public Health**
   * **Period**: Jul. 2021 – Jul. 2025 (as a research intern)
   * **Supervisor**: Dr. Zhichao Li (Associate research fellow at Chinese Academy of Sciences)
-  * **Role**: (2nd author of [Publication in preparation](#pub-2024-gan)) Applied the Generative Adversarial Network in imputation of temporal and spatial dengue data in Brazil; evaluated the impacts of environmental factors on the dispersion of COVID-19 from humans to animals using machine learning; applied explainable machine learning in clinical disease diagnoses.
-* **Morphing Airfoil Design through Topology Optimization**
+  * **Role**: Applied the Generative Adversarial Network in imputation of temporal and spatial dengue data in Brazil; evaluated the impacts of environmental factors on the dispersion of COVID-19 from humans to animals using machine learning; applied explainable machine learning in clinical disease diagnoses.
+<!-- * **Morphing Airfoil Design through Topology Optimization**
   * **Period**: Sept. 2020 - Nov. 2021 (as a undergraduate student researcher)
   * **Supervisor**: Prof. Wenwang Wu (SJTU)
   * **Role**: Performed topology optimization using ABAQUS to obtain a cellular superstructure twisting under pressure; validated the deformation behavior of the superstructure through 3D printing and experiments.
 * **Modeling and Force Analysis of External Piping of Aero-Engine**
   * **Period**: Mar. 2020 - Sept. 2020 (as a undergraduate student researcher)
   * **Supervisor**: Prof. Yadong Wu (SJTU)
-  * **Role**: Proposed the theoretical stress formulation of wire-wrapped pipe using elasticity theory; analyzed burst pressure values of wire-wrapping layers according to the theoretical formulation.
+  * **Role**: Proposed the theoretical stress formulation of wire-wrapped pipe using elasticity theory; analyzed burst pressure values of wire-wrapping layers according to the theoretical formulation. -->
 
 # Honors & Awards
 
@@ -105,10 +111,10 @@ I am truly a *programming guy* and sometimes even debug until 4 a.m. On [my GitH
 
 # Teaching
 
-* Teaching Assistant, Mechanics of Materials (Sophomore) *Mar. 2024 – Jul. 2024*
-* Teaching Assistant, Mechanics of Materials (Sophomore) *Mar. 2023 – Jul. 2023*
+* Teaching Assistant, Mechanics of Materials (Sophomore) *Mar. 2024 – Jul. 2024*, Shanghai Jiao Tong University
+* Teaching Assistant, Mechanics of Materials (Sophomore) *Mar. 2023 – Jul. 2023*, Shanghai Jiao Tong University
   * Won the Outstanding Teaching Assistant (Top 1%) prize for this work
-* Teaching Assistant, Theoretical Mechanics (Sophomore) *Sept. 2022 – Jan. 2023*
+* Teaching Assistant, Theoretical Mechanics (Sophomore) *Sept. 2022 – Jan. 2023*, Shanghai Jiao Tong University
 
 # Conferences Attended
 * China Computational Mechanics Conference, Dalian, China (Poster: Data-driven-based Fracture Phase Field Method)	*Aug. 2023*
@@ -117,7 +123,7 @@ I am truly a *programming guy* and sometimes even debug until 4 a.m. On [my GitH
 # Skills
 
 * **MATLAB**: 2D and 3D finite element implementation with implicit and explicit solvers for the fracture phase field method
-* **Python**: Machine learning, PyTorch/TensorFlow-based deep learning, OpenMMLab-based computer vision, FEniCS-based finite element, and data analysis
+* **Python**: Machine learning, PyTorch/TensorFlow-based deep learning, OpenMMLab-based computer vision, FEniCS/FEniCSx-based finite element, and data analysis
 * **C++**: deal.II-based finite element, 2D/3D finite element implementation for beam structures, dynamics simulation of mechanical structures
 * **Mechanical Analysis Software**: COMSOL, ABAQUS and its secondary development with Python, Ansys and Ansys Fluent, and Adams
 * **Auxiliary Research Skills**: LaTeX, Unix, Git, Docker, Unity, Solidworks, Adobe Illustrator/Photoshop, and Visio
