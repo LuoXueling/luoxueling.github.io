@@ -88,14 +88,7 @@ I am truly a *programming guy* and sometimes even debug until 4 a.m. On [my GitH
   * **Period**: Jul. 2021 – Jul. 2025 (as a research intern)
   * **Supervisor**: Dr. Zhichao Li (Associate research fellow at Chinese Academy of Sciences)
   * **Role**: Applied the Generative Adversarial Network in imputation of temporal and spatial dengue data in Brazil; evaluated the impacts of environmental factors on the dispersion of COVID-19 from humans to animals using machine learning; applied explainable machine learning in clinical disease diagnoses.
-<!-- * **Morphing Airfoil Design through Topology Optimization**
-  * **Period**: Sept. 2020 - Nov. 2021 (as a undergraduate student researcher)
-  * **Supervisor**: Prof. Wenwang Wu (SJTU)
-  * **Role**: Performed topology optimization using ABAQUS to obtain a cellular superstructure twisting under pressure; validated the deformation behavior of the superstructure through 3D printing and experiments.
-* **Modeling and Force Analysis of External Piping of Aero-Engine**
-  * **Period**: Mar. 2020 - Sept. 2020 (as a undergraduate student researcher)
-  * **Supervisor**: Prof. Yadong Wu (SJTU)
-  * **Role**: Proposed the theoretical stress formulation of wire-wrapped pipe using elasticity theory; analyzed burst pressure values of wire-wrapping layers according to the theoretical formulation. -->
+
 
 # Honors & Awards
 
