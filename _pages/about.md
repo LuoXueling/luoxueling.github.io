@@ -14,7 +14,7 @@ redirect_from:
 
 🔫 Besides a fulfilling academic life, I relax by playing badminton🏸 or video games🎮, taking photographs using my Fujifilm📷, going to the gym🏋️, walking around the campus🚶, drinking a little🍺, and eating half of a watermelon🍉 (2kg maximum).
 
-If you find my Chinese given name Xueling difficult to pronounce [[Google translation](https://translate.google.com/?sl=auto&tl=en&text=%E9%9B%AA%E7%81%B5&op=translate)], you can pronounce Sterling which sounds similar. My Chinese given name, which means snow (雪⛄) and elf (灵🧚), looks and sounds like a girl's name.
+If you find my Chinese given name Xueling difficult to pronounce [[Google translation](https://translate.google.com/?sl=auto&tl=en&text=%E9%9B%AA%E7%81%B5&op=translate)], you can pronounce Sterling which sounds similar. My Chinese given name, which means snow (雪⛄) and elf (灵🧚).
 
 # Research Interest
 
@@ -104,6 +104,7 @@ I am truly a *programming guy* and sometimes even debug until 4 a.m. On [my GitH
 
 # Teaching
 
+* Teaching Assistant, Introduction to Mechanical Design (Sophomore) *Jan. 2026 – Present*, Cornell University
 * Teaching Assistant, Mechanics of Materials (Sophomore) *Mar. 2024 – Jul. 2024*, Shanghai Jiao Tong University
 * Teaching Assistant, Mechanics of Materials (Sophomore) *Mar. 2023 – Jul. 2023*, Shanghai Jiao Tong University
   * Won the Outstanding Teaching Assistant (Top 1%) prize for this work
