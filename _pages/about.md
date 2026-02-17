@@ -116,9 +116,9 @@ I am truly a *programming guy* and sometimes even debug until 4 a.m. On [my GitH
 
 # Skills
 
-* **MATLAB**: 2D and 3D finite element implementation with implicit and explicit solvers for the fracture phase field method
-* **Python**: Machine learning, PyTorch/TensorFlow-based deep learning, OpenMMLab-based computer vision, FEniCS/FEniCSx-based finite element, and data analysis
+* **Python**: Machine learning, PyTorch/TensorFlow-based deep learning, OpenMMLab-based computer vision, NVIDIA-Warp-based and FEniCS/FEniCSx-based finite element, and data analysis
 * **C++**: deal.II-based finite element, 2D/3D finite element implementation for beam structures, dynamics simulation of mechanical structures
+* **MATLAB**: 2D and 3D finite element implementation with implicit and explicit solvers for the fracture phase field method
 * **Mechanical Analysis Software**: COMSOL, ABAQUS and its secondary development with Python, Ansys and Ansys Fluent, and Adams
 * **Auxiliary Research Skills**: LaTeX, Unix, Git, Docker, Unity, Solidworks, Adobe Illustrator/Photoshop, and Visio
 
