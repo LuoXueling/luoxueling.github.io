@@ -76,13 +76,17 @@ My research interests currently lie in **machine learning for mechanics**, **adj
 ## On-going research
 
 * **Connecting generative 3D shape synthesis, GPU-based differentiable FEA, and design optimization**
-  * **Period**: Sept. 2025 - Present (as a PhD student)
+  * **Period**: Sept. 2025 - Present
   * **Supervisor**: Prof. Nikolaos Bouklas (Cornell University)
   * **Role**: Implement an rapid end-to-end pipeline from generative AI shape synthesis to GPU-accelerated finite element analysis, and to shape and topology optimization, on non-conforming mesh, implemented via Nvidia Warp. 
 * **Acceleration Schemes of Fracture-phase-field-based Fatigue Simulation**
-  * **Period**: Jul. 2024 - Present (as a research intern)
+  * **Period**: Jul. 2024 - Present
   * **Supervisor**: Prof. Emilio Martínez Pañeda (University of Oxford)
   * **Role**: Conduct a comparative study on various acceleration methods for fracture phase field simulations of fatigue, implemented using deal.II.
+* **Mitigating fatigue crack growth with engineered bacteria**
+  * **Period**: May. 2026 - Present
+  * **Supervisors**: Prof. Meredith Silberstein, Prof. Nikolaos Bouklas, and Prof. Andrea Giometto (Cornell University)
+  * **Role**: Conduct computational (phase-field-based) analysis of stress corrosion cracking in ocean environment. 
 
 ## Other
 
