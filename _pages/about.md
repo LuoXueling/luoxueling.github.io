@@ -10,11 +10,11 @@ redirect_from:
   - /about.html
 ---
 
-🎓 I am a Ph.D. student at Cornell University in August, 2025, working with [Prof. Nikolaos Bouklas](https://blogs.cornell.edu/bouklaslab/group/). Previously, I have received B.Eng. and M.Eng. from Shanghai Jiao Tong University (SJTU). 
+🎓 I am a Ph.D. student at Cornell University in August, 2025, working with [Prof. Nikolaos Bouklas](https://blogs.cornell.edu/bouklaslab/group/). Previously, I have received B.S. and M.S. from Shanghai Jiao Tong University (SJTU). 
 
-🔫 Besides a fulfilling academic life, I relax by playing badminton🏸 or video games🎮, taking photographs using my Fujifilm📷, going to the gym🏋️, walking around the campus🚶, drinking a little🍺, and eating half of a watermelon🍉 (2kg maximum).
+Hobby: Badminton🏸, video games🎮, photography📷.
 
-If you find my Chinese given name Xueling difficult to pronounce [[Google translation](https://translate.google.com/?sl=auto&tl=en&text=%E9%9B%AA%E7%81%B5&op=translate)], you can pronounce Sterling which sounds similar. My Chinese given name, which means snow (雪⛄) and elf (灵🧚).
+Talent: Eating half of a large watermelon🍉 in half an hour. 
 
 # Research Interest
 
@@ -25,70 +25,83 @@ My research interests currently lie in **machine learning for mechanics**, **adj
 * **Ph.D. student, Cornell University**, Mechanical Engineering
   * Aug. 2025 - Present
   * Advisor: Prof. Nikolaos Bouklas
-* **M.Eng. (Research-based), Shanghai Jiao Tong University (SJTU)**, Computational Mechanics
+* **M.S., Shanghai Jiao Tong University (SJTU)**, Computational Mechanics
   * Sept. 2022 - Mar. 2025
   * GPA: 3.82/4.0
   * Thesis: Machine-Learning-Based Fatigue Life Prediction of Fiber-Reinforced Composite Materials
   * Advisor: Prof. Lu-Wen Zhang
-* **B.Eng., Shanghai Jiao Tong University (SJTU)**, Engineering Mechanics
+* **B.S., Shanghai Jiao Tong University (SJTU)**, Engineering Mechanics
   * Sept. 2018 - Jun. 2022
   * GPA: 3.78/4.3 (88.8/100)
   * Thesis: Data-Driven Phase Field Fracture Analysis
   * Minor: AI+X (华东五校AI+X微辅修)
 
-# Publications
+# Research
+
+## Peer-reviewed journal articles
 
 <a name="pub-2024-piml"></a>
-* **Xue-Ling Luo**, Cheng-Cheng Lyu, and Lu-Wen Zhang* . **Physics-informed ensemble learning for robustly extrapolating and revealing fatigue life of composites**. *Composites Science and Technology* (2025): 111302. [[Publisher]](https://www.sciencedirect.com/science/article/pii/S0266353825002702) [[ResearchGate]](https://www.researchgate.net/publication/395003907_Physics-informed_ensemble_learning_for_robustly_extrapolating_and_revealing_fatigue_life_of_composites)
+* **Physics-informed ensemble learning for robustly extrapolating and revealing fatigue life of composites**. *Composites Science and Technology* (2025): 111302. [[Publisher]](https://www.sciencedirect.com/science/article/pii/S0266353825002702) [[ResearchGate]](https://www.researchgate.net/publication/395003907_Physics-informed_ensemble_learning_for_robustly_extrapolating_and_revealing_fatigue_life_of_composites)
+  * by **Xue-Ling Luo**, Cheng-Cheng Lyu, and Lu-Wen Zhang* . 
+  * **Supervisor**: Prof. Luwen Zhang (SJTU)
+  * **Role**: Proposed an ensemble learning framework facilitating both empirical formulations and machine learning models ([Source code and data](https://github.com/LuoXueling/ENSEMBLE/tree/publication) that will be released before submission); proposed a Transformer-based model to consider the lay-up sequences of fiber-reinforced composites; constructed a benchmark platform of machine learning models for tabular prediction in Python ([TabularEnsemble](https://github.com/LuoXueling/tabular_ensemble)).
 
 <a name="pub-2022-data-driven"></a>
-* **Xue-Ling Luo**, Jia-Yu Ye, Pu-Song Ma, and Lu-Wen Zhang* . **Data-driven enhanced phase field models for highly accurate prediction of Mode I and Mode II fracture**. *Computer Methods in Applied Mechanics and Engineering 400* (2022): 115535. [[Publisher]](https://www.sciencedirect.com/science/article/pii/S004578252200531X) [[ResearchGate]](https://www.researchgate.net/publication/363156166_Data-driven_enhanced_phase_field_models_for_highly_accurate_prediction_of_Mode_I_and_Mode_II_fracture)
+* **Data-driven enhanced phase field models for highly accurate prediction of Mode I and Mode II fracture**. *Computer Methods in Applied Mechanics and Engineering 400* (2022): 115535. [[Publisher]](https://www.sciencedirect.com/science/article/pii/S004578252200531X) [[ResearchGate]](https://www.researchgate.net/publication/363156166_Data-driven_enhanced_phase_field_models_for_highly_accurate_prediction_of_Mode_I_and_Mode_II_fracture)
+  * by **Xue-Ling Luo**, Jia-Yu Ye, Pu-Song Ma, and Lu-Wen Zhang* . 
+  * **Supervisor**: Prof. Luwen Zhang (SJTU)
+  * **Role**: Proposed the data-driven algorithm for the fracture phase field method; implemented the proposed algorithm in MATLAB, based on a traditional 2D/3D finite element solver; validated the proposed algorithm for mode I and mode II fractures of linear elastic and neo-Hookean hyperelastic models.
 
 <a name="pub-2024-multiscale"></a>
-* Pu‐Song Ma<sup>1</sup>, Xing‐Cheng Liu<sup>1</sup>, **Xue‐Ling Luo**, Shaofan Li, and Lu‐Wen Zhang* . **Asymptotic homogenization of phase‐field fracture model: An efficient multiscale finite element framework for anisotropic fracture**. *International Journal for Numerical Methods in Engineering* (2024): e7489. [[Publisher]](https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.7489) [[ResearchGate]](https://www.researchgate.net/publication/379517633_Asymptotic_homogenization_of_phase-field_fracture_model_An_efficient_multiscale_finite_element_framework_for_anisotropic_fracture)
+* **Asymptotic homogenization of phase‐field fracture model: An efficient multiscale finite element framework for anisotropic fracture**. *International Journal for Numerical Methods in Engineering* (2024): e7489. [[Publisher]](https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.7489) [[ResearchGate]](https://www.researchgate.net/publication/379517633_Asymptotic_homogenization_of_phase-field_fracture_model_An_efficient_multiscale_finite_element_framework_for_anisotropic_fracture)
+  * by Pu‐Song Ma<sup>1</sup>, Xing‐Cheng Liu<sup>1</sup>, **Xue‐Ling Luo**, Shaofan Li, and Lu‐Wen Zhang* . 
+  * **Supervisors**: Prof. Luwen Zhang (SJTU) & Prof. Shaofan Li (UC Berkeley)
+  * **Role**: Participated in the conceptualization, discussions, and revision of an asymptotic-expansion-based multiscale fracture phase field method.
+
+
+## Preprints submitted to journals
+
+* **Towards end-to-end optimization in multimaterial 3D printing**. arXiv preprint, [[arXiv:2607.13174](https://arxiv.org/abs/2607.13174)] (submitted to Engineering with Computers)
+  * by **Xue-Ling Luo**, Steven Yang, Jingye Tan, Robert F. Shepherd, Noy Cohen, and Nikolaos Bouklas*. 
+  * **Supervisor**: Prof. Nikolaos Bouklas (Cornell University)
+  * **Role**: Utilize sparsified machine learning constitutive laws for finite element analysis and optimization of topology and multimaterial distribution. 
+
+* **How do 3M Command strips work? A fracture mechanics approach**. arXiv preprint, [[arXiv:2607.11650](https://arxiv.org/abs/2607.11650)] (submitted to Soft Matter)
+  * by **Xue-Ling Luo***, Nikolaos Bouklas, and Chung-Yuen Hui*. 
+  * **Supervisor**: Prof. Chung-Yuen Hui (Cornell University)
+  * **Role**: Propose analytical fracture mechanics solutions of a multilayer stretch-release adhesive system and finite element analysis. Analyze an interesting alternating crack propagation pattern between two competing cracks. 
+
+
+
+## On-going research
+
+* **Connecting generative 3D shape synthesis, GPU-based differentiable FEA, and design optimization**
+  * **Period**: Sept. 2025 - Present
+  * **Supervisor**: Prof. Nikolaos Bouklas (Cornell University)
+  * **Role**: Implement an rapid end-to-end pipeline from generative AI shape synthesis to GPU-accelerated finite element analysis, and to shape and topology optimization, on non-conforming mesh, implemented via Nvidia Warp. 
+* **Acceleration Schemes of Fracture-phase-field-based Fatigue Simulation**
+  * **Period**: Jul. 2024 - Present
+  * **Supervisor**: Prof. Emilio Martínez Pañeda (University of Oxford)
+  * **Role**: Conduct a comparative study on various acceleration methods for fracture phase field simulations of fatigue, implemented using deal.II.
+* **Mitigating fatigue crack growth with engineered bacteria**
+  * **Period**: May. 2026 - Present
+  * **Supervisors**: Prof. Meredith Silberstein, Prof. Nikolaos Bouklas, and Prof. Andrea Giometto (Cornell University)
+  * **Role**: Conduct computational (phase-field-based) analysis of stress corrosion cracking in ocean environment. 
+
+## Other
+
+* **Machine Learning & Deep Learning in Geology and Public Health**
+  * **Period**: Jul. 2021 – Jul. 2025 (as a research intern)
+  * **Supervisor**: Dr. Zhichao Li (Chinese Academy of Sciences)
+  * **Role**: Applied the Generative Adversarial Network in imputation of temporal and spatial dengue data in Brazil; evaluated the impacts of environmental factors on the dispersion of COVID-19 from humans to animals using machine learning; applied explainable machine learning in clinical disease diagnoses.
 
 # Open-source projects
 
 I am truly a *programming guy* and sometimes even debug until 4 a.m. On [my GitHub](https://github.com/LuoXueling), you can find various projects I did for research and coursework that demonstrate my programming skills in computational mechanics and machine learning. 
 
-* Regarding computational mechanics, I have released GitHub repositories for 2D/3D linear-elastic/hyperelastic static/dynamic finite element methods using MATLAB [[GitHub link](https://github.com/LuoXueling/FiniteElementMethodAndQuasicontinuumFracture)] and C++ [[GitHub link](https://github.com/LuoXueling/FiniteElementMethodForBeamAndTrussStructures)], 2D kinematics and dynamics using C++ [[GitHub link](https://github.com/LuoXueling/ComputationalKinematicsDynamicsOfMechanicalSystems)], and 2D steady incompressible flow and Stokes flow using Python [[GitHub link](https://github.com/LuoXueling/ComputationalFluidMechanicsSimpleExamples)]. 
+* Regarding computational mechanics, I have released GitHub repositories for 2D/3D linear-elastic/hyperelastic static/dynamic finite element methods using Python (FEniCS/FEniCSx) [[GitHub link](https://github.com/LuoXueling/optimization_of_digital_material_distribution)], MATLAB [[GitHub link](https://github.com/LuoXueling/FiniteElementMethodAndQuasicontinuumFracture)] and C++ [[GitHub link](https://github.com/LuoXueling/FiniteElementMethodForBeamAndTrussStructures)], 2D kinematics and dynamics using C++ [[GitHub link](https://github.com/LuoXueling/ComputationalKinematicsDynamicsOfMechanicalSystems)], and 2D steady incompressible flow and Stokes flow using Python [[GitHub link](https://github.com/LuoXueling/ComputationalFluidMechanicsSimpleExamples)]. 
 
 * Regarding machine learning, I have open-sourced a machine learning platform named TabularEnsemble [[GitHub link](https://github.com/LuoXueling/tabular_ensemble)]. 
-
-
-# Research Experience
-
-* **Optimization of digital material distribution**
-  * **Period**: Aug. 2025 - Present (as a PhD student)
-  * **Supervisor**: Prof. Nikolaos Bouklas (Cornell University)
-* **Shape optimization via deep representations of Signed Distance Function**
-  * **Period**: Sept. 2025 - Present (as a PhD student)
-  * **Supervisor**: Prof. Nikolaos Bouklas (Cornell University)
-* **Acceleration Schemes of Fracture-phase-field-based Fatigue Simulation**
-  * **Period**: Jul. 2024 - Present (as a research intern)
-  * **Supervisor**: Prof. Emilio Martínez Pañeda (University of Oxford)
-  * **Role**: (Will be the co-1st author) A comparative study on various acceleration methods for fracture phase field simulations of fatigue, implemented using deal.II.
-* **Fracture Phase Field Method in Helium Embrittlement**
-  * **Period**: Jul. 2024 - Mar. 2025 (as a master's student)
-  * **Supervisor**: Prof. Luwen Zhang (SJTU)
-  * **Role**: (Will be the co-1st author) Propose a fracture phase field method coupled with Helium diffusion and Helium bubbles and simulate it using COMSOL.
-* **Physics-Informed Machine Learning for Fatigue Life Prediction**
-  * **Period**: Sept. 2022 – Mar. 2025 (as a master's student)
-  * **Supervisor**: Prof. Luwen Zhang (SJTU)
-  * **Role**: (1st author of [Publication submitted](#pub-2024-piml)) Proposed an ensemble learning framework facilitating both empirical formulations and machine learning models ([Source code and data](https://github.com/LuoXueling/ENSEMBLE/tree/publication) that will be released before submission); proposed a Transformer-based model to consider the lay-up sequences of fiber-reinforced composites; constructed a benchmark platform of machine learning models for tabular prediction in Python ([TabularEnsemble](https://github.com/LuoXueling/tabular_ensemble)).
-* **Multiscale Fracture Phase Field Method**
-  * **Period**: Sept. 2022 – Mar. 2024 (as a bachelor's & master's student)
-  * **Supervisors**: Prof. Luwen Zhang (SJTU) & Prof. Shaofan Li (UC Berkeley)
-  * **Role**: (3rd author of [Publication](#pub-2024-multiscale)) Participated in the conceptualization, discussions, and revision of an asymptotic-expansion-based multiscale fracture phase field method.
-* **Data-driven Fracture Phase Field Method**
-  * **Period**: Sept. 2021 – Aug. 2022 (as a bachelor's student)
-  * **Supervisor**: Prof. Luwen Zhang (SJTU)
-  * **Role**: (1st author of [Publication](#pub-2022-data-driven)) Proposed the data-driven algorithm for the fracture phase field method; implemented the proposed algorithm in MATLAB, based on a traditional 2D/3D finite element solver; validated the proposed algorithm for mode I and mode II fractures of linear elastic and neo-Hookean hyperelastic models.
-* **Machine Learning & Deep Learning in Geology and Public Health**
-  * **Period**: Jul. 2021 – Jul. 2025 (as a research intern)
-  * **Supervisor**: Dr. Zhichao Li (Associate research fellow at Chinese Academy of Sciences)
-  * **Role**: Applied the Generative Adversarial Network in imputation of temporal and spatial dengue data in Brazil; evaluated the impacts of environmental factors on the dispersion of COVID-19 from humans to animals using machine learning; applied explainable machine learning in clinical disease diagnoses.
-
 
 # Honors & Awards
 
@@ -104,13 +117,15 @@ I am truly a *programming guy* and sometimes even debug until 4 a.m. On [my GitH
 
 # Teaching
 
-* Teaching Assistant, Introduction to Mechanical Design (Sophomore) *Jan. 2026 – Present*, Cornell University
+* Teaching Assistant, Finite Element Analysis for Mechanical and Aerospace Design (Grad) *Aug. 2026 – Dec. 2026*, Cornell University
+* Teaching Assistant, Introduction to Mechanical Design (Sophomore) *Jan. 2026 – May. 2026*, Cornell University
 * Teaching Assistant, Mechanics of Materials (Sophomore) *Mar. 2024 – Jul. 2024*, Shanghai Jiao Tong University
 * Teaching Assistant, Mechanics of Materials (Sophomore) *Mar. 2023 – Jul. 2023*, Shanghai Jiao Tong University
   * Won the Outstanding Teaching Assistant (Top 1%) prize for this work
 * Teaching Assistant, Theoretical Mechanics (Sophomore) *Sept. 2022 – Jan. 2023*, Shanghai Jiao Tong University
 
-# Conferences Attended
+# Conferences
+* AI-Empowered Simulations & CAE Applications (AESCAPE 2026), Dallas, USA (Oral: Connecting generative 3D shape synthesis, GPU-based differentiable FEA, and design optimization) *Sept. 2026*
 * China Computational Mechanics Conference, Dalian, China (Poster: Data-driven-based Fracture Phase Field Method)	*Aug. 2023*
 * National Symposium on Data-driven Computational Mechanics, Dalian, China	*Apr. 2023*
 
