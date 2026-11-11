@@ -18,11 +18,11 @@ Talent: Eating half of a large watermelon🍉 in half an hour.
 
 # Research Interest
 
-My research interests currently lie in **machine learning for mechanics**, **adjoint state method**, **optimization**, **GPU computing**. I have rich experience in **fracture phase field methods**, **data-driven computational mechanics**, and **physics-informed machine learning**.
+My research interests currently lie in **machine learning for mechanics**, **optimization**, and **GPU-accelerated computing**. I have rich experience in **fracture phase field methods**, **data-driven computational mechanics**, and **physics-informed machine learning**.
 
 # Education
 
-* **Ph.D. student, Cornell University**, Mechanical Engineering
+* **Ph.D. student, Cornell University**, Mechanical Engineering, minor in CS and Robotics
   * Aug. 2025 - Present
   * Advisor: Prof. Nikolaos Bouklas
 * **M.S., Shanghai Jiao Tong University (SJTU)**, Computational Mechanics
@@ -40,45 +40,38 @@ My research interests currently lie in **machine learning for mechanics**, **adj
 
 ## Peer-reviewed journal articles
 
+* **How do 3M Command strips work? A fracture mechanics approach**. *Soft Matter* (2026) 22 (40): 6764–6775. [[Publisher]](https://pubs.rsc.org/sm/article/22/40/6764/1365960/How-do-3M-CommandT-strips-work-A-fracture) [[arXiv:2607.11650](https://arxiv.org/abs/2607.11650)]
+  * by **Xue-Ling Luo***, Nikolaos Bouklas, and Chung-Yuen Hui*. 
+  * **Role**: Propose analytical fracture mechanics solutions of a multilayer stretch-release adhesive system and finite element analysis. Analyze an interesting alternating crack propagation pattern between two competing cracks. 
+
 <a name="pub-2024-piml"></a>
 * **Physics-informed ensemble learning for robustly extrapolating and revealing fatigue life of composites**. *Composites Science and Technology* (2025): 111302. [[Publisher]](https://www.sciencedirect.com/science/article/pii/S0266353825002702) [[ResearchGate]](https://www.researchgate.net/publication/395003907_Physics-informed_ensemble_learning_for_robustly_extrapolating_and_revealing_fatigue_life_of_composites)
   * by **Xue-Ling Luo**, Cheng-Cheng Lyu, and Lu-Wen Zhang* . 
-  * **Supervisor**: Prof. Luwen Zhang (SJTU)
-  * **Role**: Proposed an ensemble learning framework facilitating both empirical formulations and machine learning models ([Source code and data](https://github.com/LuoXueling/ENSEMBLE/tree/publication) that will be released before submission); proposed a Transformer-based model to consider the lay-up sequences of fiber-reinforced composites; constructed a benchmark platform of machine learning models for tabular prediction in Python ([TabularEnsemble](https://github.com/LuoXueling/tabular_ensemble)).
+  * **Role**: Proposed an ensemble learning framework facilitating both empirical formulations and machine learning models ([Source code and data](https://github.com/LuoXueling/ENSEMBLE/tree/publication)); proposed a Transformer-based model to consider the lay-up sequences of fiber-reinforced composites; constructed a benchmark platform of machine learning models for tabular prediction in Python ([TabularEnsemble](https://github.com/LuoXueling/tabular_ensemble)).
 
 <a name="pub-2022-data-driven"></a>
 * **Data-driven enhanced phase field models for highly accurate prediction of Mode I and Mode II fracture**. *Computer Methods in Applied Mechanics and Engineering 400* (2022): 115535. [[Publisher]](https://www.sciencedirect.com/science/article/pii/S004578252200531X) [[ResearchGate]](https://www.researchgate.net/publication/363156166_Data-driven_enhanced_phase_field_models_for_highly_accurate_prediction_of_Mode_I_and_Mode_II_fracture)
   * by **Xue-Ling Luo**, Jia-Yu Ye, Pu-Song Ma, and Lu-Wen Zhang* . 
-  * **Supervisor**: Prof. Luwen Zhang (SJTU)
   * **Role**: Proposed the data-driven algorithm for the fracture phase field method; implemented the proposed algorithm in MATLAB, based on a traditional 2D/3D finite element solver; validated the proposed algorithm for mode I and mode II fractures of linear elastic and neo-Hookean hyperelastic models.
 
 <a name="pub-2024-multiscale"></a>
 * **Asymptotic homogenization of phase‐field fracture model: An efficient multiscale finite element framework for anisotropic fracture**. *International Journal for Numerical Methods in Engineering* (2024): e7489. [[Publisher]](https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.7489) [[ResearchGate]](https://www.researchgate.net/publication/379517633_Asymptotic_homogenization_of_phase-field_fracture_model_An_efficient_multiscale_finite_element_framework_for_anisotropic_fracture)
   * by Pu‐Song Ma<sup>1</sup>, Xing‐Cheng Liu<sup>1</sup>, **Xue‐Ling Luo**, Shaofan Li, and Lu‐Wen Zhang* . 
-  * **Supervisors**: Prof. Luwen Zhang (SJTU) & Prof. Shaofan Li (UC Berkeley)
   * **Role**: Participated in the conceptualization, discussions, and revision of an asymptotic-expansion-based multiscale fracture phase field method.
 
 
 ## Preprints submitted to journals
 
-* **Towards end-to-end optimization in multimaterial 3D printing**. arXiv preprint, [[arXiv:2607.13174](https://arxiv.org/abs/2607.13174)] (submitted to Engineering with Computers)
+* **MechFoundry: An agentic loop that poses and performs engineering analyses and optimization of real-world objects**. (Submitted to Nature Machine Intelligence)
+  * by **Xue-Ling Luo**, Marco Conte, Peter Yichen Chen, and Nikolaos Bouklas*. 
+  * **Role**: Build an agentic workflow that performs GPU-accelerated finite element analysis and optimization from a few words of the object's name. Computational backend implemented with NVIDIA Warp. Also implemented a web user interface.  
+
+* **Towards end-to-end optimization in multimaterial 3D printing**. arXiv preprint, [[arXiv:2607.13174](https://arxiv.org/abs/2607.13174)] (under revision for Engineering with Computers)
   * by **Xue-Ling Luo**, Steven Yang, Jingye Tan, Robert F. Shepherd, Noy Cohen, and Nikolaos Bouklas*. 
-  * **Supervisor**: Prof. Nikolaos Bouklas (Cornell University)
   * **Role**: Utilize sparsified machine learning constitutive laws for finite element analysis and optimization of topology and multimaterial distribution. 
-
-* **How do 3M Command strips work? A fracture mechanics approach**. arXiv preprint, [[arXiv:2607.11650](https://arxiv.org/abs/2607.11650)] (submitted to Soft Matter)
-  * by **Xue-Ling Luo***, Nikolaos Bouklas, and Chung-Yuen Hui*. 
-  * **Supervisor**: Prof. Chung-Yuen Hui (Cornell University)
-  * **Role**: Propose analytical fracture mechanics solutions of a multilayer stretch-release adhesive system and finite element analysis. Analyze an interesting alternating crack propagation pattern between two competing cracks. 
-
-
 
 ## On-going research
 
-* **Connecting generative 3D shape synthesis, GPU-based differentiable FEA, and design optimization**
-  * **Period**: Sept. 2025 - Present
-  * **Supervisor**: Prof. Nikolaos Bouklas (Cornell University)
-  * **Role**: Implement an rapid end-to-end pipeline from generative AI shape synthesis to GPU-accelerated finite element analysis, and to shape and topology optimization, on non-conforming mesh, implemented via Nvidia Warp. 
 * **Acceleration Schemes of Fracture-phase-field-based Fatigue Simulation**
   * **Period**: Jul. 2024 - Present
   * **Supervisor**: Prof. Emilio Martínez Pañeda (University of Oxford)
