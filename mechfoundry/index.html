@@ -173,14 +173,13 @@
   <div class="toc-list">
     <a href="#video">Demo video</a>
     <a href="#abstract">Abstract</a>
-    <a href="#gallery">50 objects</a>
     <a href="#method">Method</a>
     <a href="#sessions">Agent sessions</a>
-    <a href="#grades">Reviewer grades</a>
     <a href="#variations">Variations</a>
     <a href="#optimization">Optimization</a>
     <a href="#refinement">Shape refinement</a>
     <a href="#interface">Web interface</a>
+    <a href="#grades">Reviewer grades</a>
     <a href="#comparison">FEA accuracy &amp; cost</a>
   </div>
 </nav>
@@ -224,13 +223,8 @@
     <p>AI agents can automate software engineering because a compiler or a test suite checks that the code does what the user or the agent intended. In engineering analysis, however, the steps that precede the computation have few easily verifiable checks: modeling a design or an object, deciding how it is used, where supports and loads are applied, and what material each part is made of. A human expert therefore makes these decisions, carries out the steps, and judges the result, one object at a time.</p>
     <p>We present MechFoundry, an agentic loop coupled with bespoke software that automates structural analyses of real-world objects without a human in the loop. From an object’s lexical description, it generates a shape, poses a loading case relevant to how the object is used, assigns a material to each part, solves the nonlinear structural response, and improves the design against the loads it carries. A differentiable GPU solver built on an adaptive octree that need not conform to the surface enables the transition from shape generation to simulation and optimization. Across 50 everyday and engineering objects, the agent posed and solved a loading case in 6.5 minutes and for US$1.3 per object on average. Without a test suite to check against, we had language-model reviewers grade each session, as a first indication of where the agent’s engineering judgment holds and where it fails.</p>
   </div>
-</section>
-
-<section id="gallery">
-  <h2>Fifty objects simulated from short descriptions</h2>
-  <p class="sub">We gave the AI agent operator only a short description of each object, such as “a park bench”. The operator follows an operator skill, a set of generic instructions, reference material and scripts written for the role of an engineer, and runs the workflow without further input. A session took 6.5 minutes and cost US$1.3 at API price on average.</p>
-  <img width="2800" height="1711" class="fig" src="static/img/gallery.jpg" alt="50 generated objects, each deformed under the loading case the agent posed" loading="lazy">
-  <p class="cap">The 50 objects come from 10 categories, from household items to landmarks, and each was run by Claude Code with Opus 5.5. Color shows the displacement magnitude, and the gray outline is the undeformed shape.</p>
+  <img width="2800" height="1711" style="margin-top:24px" class="fig" src="static/img/gallery.jpg" alt="50 generated objects, each deformed under the loading case the agent posed" >
+  <p class="cap">The 50 objects come from 10 categories, from household items to landmarks. Each was run by Claude Code with Opus 5.5 from a short description, following a generic operator skill. Color shows the displacement magnitude, and the gray outline is the undeformed shape.</p>
 </section>
 
 <section id="method">
@@ -245,23 +239,6 @@
   <p class="sub">Each row is one of the 50 autonomous sessions, and the columns follow the order of the work. The operator first wrote a case brief stating how the object is used, where it is held, what loads it and how large each load is. It then picked a route for generating the shape. AI subagents proposed the support and load regions and a material for each part, and the operator approved or edited each proposal after looking at the rendered result. Last, it checked the solved deformation.</p>
   <img width="2400" height="2298" class="fig" src="static/img/agentic_results.jpg" alt="Six autonomous sessions: shape, supports and loads, materials, deformed shape" loading="lazy">
   <p class="cap">Columns: the session’s tokens and wall-clock time, the generated shape, supports (teal) and loads (orange), per-part Young’s modulus (log scale), and the deformed shape (magnified by the factor at the upper right).</p>
-</section>
-
-<section id="grades">
-  <h2>Grades from language-model reviewers</h2>
-  <p class="sub">We ran each of the 50 objects once with each of three operators, Claude Haiku 5.5, Sonnet 5.5 and Opus 5.5. There is no test suite for a loading case, so two panels of language-model reviewers graded the sessions. One panel had three Claude Fable 5.1 agents, from the same model family as the operators, and the other had three GPT-6-Astra agents. The reviewers saw each session’s figures, report and files without the operator’s name, and graded the geometry, the supports and loads, and the materials as high, moderate or low against fixed criteria. No human graded the sessions. Each bar shows the majority vote of a panel, or the median when all three reviewers differ. Cohen’s kappa between the two panels was 0.19–0.25, which is slight to fair agreement.</p>
-  <div class="viz" id="rate">
-    <div class="viz-legend"><span><i class="g-H"></i>High</span><span><i class="g-M"></i>Moderate</span><span><i class="g-L" style="outline:1px solid #cfc6ef"></i>Low</span><span><i class="g-N"></i>Not graded (setting never produced)</span></div>
-    <div class="rate-grid" id="rate-grid"></div>
-    <div class="viz-tip" id="rate-tip"></div>
-  </div>
-  <p class="cap">Number of the 50 objects at each grade. Haiku 5.5 did not finish 4 sessions; in three of them some settings were never produced and could not be graded (gray).</p>
-  <div class="viz" id="cost" style="margin-top: 22px;">
-    <div class="rate-panel"><h3>Operator cost per session <span class="unit" style="font-weight:400;color:var(--ink2);font-size:13px">(US$ at API price, log scale; one dot per object)</span></h3></div>
-    <svg id="cost-svg" style="width:100%;height:auto"></svg>
-    <div class="viz-tip" id="cost-tip"></div>
-  </div>
-  <p class="cap">The operator’s cost for each of the 50 sessions, excluding the AI subagent calls inside the workflow (usually under US$0.02 per object). The vertical tick marks the median.</p>
 </section>
 
 <section id="variations">
@@ -299,6 +276,23 @@
   <p class="cap"><b>Agent-operated:</b> a park bench, with the agent’s report.</p>
   <img width="2400" height="1350" class="fig ui-shot" src="static/img/ui_user.jpg" alt="Web interface showing a user-operated single-seat sofa session with the per-part material card and the displacement result" loading="lazy" style="margin-top: 22px;">
   <p class="cap"><b>User-operated:</b> a single-seat sofa, with the per-part material card, where the values proposed by the AI subagent can be edited before approval.</p>
+</section>
+
+<section id="grades">
+  <h2>Grades from language-model reviewers</h2>
+  <p class="sub">We ran each of the 50 objects once with each of three operators, Claude Haiku 5.5, Sonnet 5.5 and Opus 5.5. There is no test suite for a loading case, so two panels of language-model reviewers graded the sessions. One panel had three Claude Fable 5.1 agents, from the same model family as the operators, and the other had three GPT-6-Astra agents. The reviewers saw each session’s figures, report and files without the operator’s name, and graded the geometry, the supports and loads, and the materials as high, moderate or low against fixed criteria. No human graded the sessions. Each bar shows the majority vote of a panel, or the median when all three reviewers differ. Cohen’s kappa between the two panels was 0.19–0.25, which is slight to fair agreement.</p>
+  <div class="viz" id="rate">
+    <div class="viz-legend"><span><i class="g-H"></i>High</span><span><i class="g-M"></i>Moderate</span><span><i class="g-L" style="outline:1px solid #cfc6ef"></i>Low</span><span><i class="g-N"></i>Not graded (setting never produced)</span></div>
+    <div class="rate-grid" id="rate-grid"></div>
+    <div class="viz-tip" id="rate-tip"></div>
+  </div>
+  <p class="cap">Number of the 50 objects at each grade. Haiku 5.5 did not finish 4 sessions; in three of them some settings were never produced and could not be graded (gray).</p>
+  <div class="viz" id="cost" style="margin-top: 22px;">
+    <div class="rate-panel"><h3>Operator cost per session <span class="unit" style="font-weight:400;color:var(--ink2);font-size:13px">(US$ at API price, log scale; one dot per object)</span></h3></div>
+    <svg id="cost-svg" style="width:100%;height:auto"></svg>
+    <div class="viz-tip" id="cost-tip"></div>
+  </div>
+  <p class="cap">The operator’s cost for each of the 50 sessions, excluding the AI subagent calls inside the workflow (usually under US$0.02 per object). The vertical tick marks the median.</p>
 </section>
 
 <section id="comparison">
