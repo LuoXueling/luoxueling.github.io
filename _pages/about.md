@@ -10,7 +10,7 @@ redirect_from:
   - /about.html
 ---
 
-🎓 I am a Ph.D. student at Cornell University in August, 2025, working with [Prof. Nikolaos Bouklas](https://blogs.cornell.edu/bouklaslab/group/). Previously, I have received B.S. and M.S. from Shanghai Jiao Tong University (SJTU). 
+🎓 I am a Ph.D. student at Cornell University since August, 2025, working with [Prof. Nikolaos Bouklas](https://blogs.cornell.edu/bouklaslab/group/). Previously, I received B.S. and M.S. from Shanghai Jiao Tong University (SJTU). 
 
 Hobby: Badminton🏸, video games🎮, photography📷.
 
@@ -40,6 +40,7 @@ My research interests currently lie in **machine learning for mechanics**, **opt
 
 ## Peer-reviewed journal articles
 
+<a name="pub-2026-3m-tape"></a>
 * **How do 3M Command strips work? A fracture mechanics approach**. *Soft Matter* (2026) 22 (40): 6764–6775. [[Publisher]](https://pubs.rsc.org/sm/article/22/40/6764/1365960/How-do-3M-CommandT-strips-work-A-fracture) [[arXiv:2607.11650](https://arxiv.org/abs/2607.11650)]
   * by **Xue-Ling Luo***, Nikolaos Bouklas, and Chung-Yuen Hui*. 
   * **Role**: Propose analytical fracture mechanics solutions of a multilayer stretch-release adhesive system and finite element analysis. Analyze an interesting alternating crack propagation pattern between two competing cracks. 
@@ -88,13 +89,13 @@ My research interests currently lie in **machine learning for mechanics**, **opt
   * **Supervisor**: Dr. Zhichao Li (Chinese Academy of Sciences)
   * **Role**: Applied the Generative Adversarial Network in imputation of temporal and spatial dengue data in Brazil; evaluated the impacts of environmental factors on the dispersion of COVID-19 from humans to animals using machine learning; applied explainable machine learning in clinical disease diagnoses.
 
-# Open-source projects
+<!-- # Open-source projects
 
 I am truly a *programming guy* and sometimes even debug until 4 a.m. On [my GitHub](https://github.com/LuoXueling), you can find various projects I did for research and coursework that demonstrate my programming skills in computational mechanics and machine learning. 
 
 * Regarding computational mechanics, I have released GitHub repositories for 2D/3D linear-elastic/hyperelastic static/dynamic finite element methods using Python (FEniCS/FEniCSx) [[GitHub link](https://github.com/LuoXueling/optimization_of_digital_material_distribution)], MATLAB [[GitHub link](https://github.com/LuoXueling/FiniteElementMethodAndQuasicontinuumFracture)] and C++ [[GitHub link](https://github.com/LuoXueling/FiniteElementMethodForBeamAndTrussStructures)], 2D kinematics and dynamics using C++ [[GitHub link](https://github.com/LuoXueling/ComputationalKinematicsDynamicsOfMechanicalSystems)], and 2D steady incompressible flow and Stokes flow using Python [[GitHub link](https://github.com/LuoXueling/ComputationalFluidMechanicsSimpleExamples)]. 
 
-* Regarding machine learning, I have open-sourced a machine learning platform named TabularEnsemble [[GitHub link](https://github.com/LuoXueling/tabular_ensemble)]. 
+* Regarding machine learning, I have open-sourced a machine learning platform named TabularEnsemble [[GitHub link](https://github.com/LuoXueling/tabular_ensemble)].  -->
 
 # Honors & Awards
 
