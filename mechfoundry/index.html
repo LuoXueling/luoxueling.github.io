@@ -86,6 +86,8 @@
     .ui-shot { border: 1px solid var(--line); }
     .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
     .pair video { border: 1px solid var(--line); }
+    .pair figure { margin: 0; }
+    .vlabel { font-size: 14px; font-weight: 600; margin-bottom: 6px; }
 
     .viz {
       background: #fff; color: #1b1a22; border: 1px solid var(--line); border-radius: 8px;
@@ -212,7 +214,7 @@
   <video controls autoplay muted loop playsinline preload="metadata" poster="static/img/demo_poster.jpg" width="1920" height="1080">
     <source src="static/video/demo.mp4" type="video/mp4">
   </video>
-  <p class="cap" style="text-align:center">From the prompt “simulate a park bench”, the AI agent operator generates the shape, poses supports and loads, assigns materials, solves the nonlinear response, and optimizes the design.</p>
+  <p class="cap" style="text-align:center">From the prompt “simulate a park bench”, the AI agent operator generates the shape, segments it into parts, poses supports and loads, assigns materials and solves the nonlinear response. The design can then optionally be optimized for load-carrying ability. The video ends on 21 of the 50 objects the operator ran autonomously.</p>
   </div>
 </section>
 
@@ -226,34 +228,34 @@
 
 <section id="gallery">
   <h2>From a few words to a solved simulation, for 50 objects</h2>
-  <p class="sub">The agent was given only a short description of each object, such as “a park bench”. From there it generated the shape, decided where the object is supported and loaded, assigned materials and ran the simulation without further input. On average a session took 6.5 minutes and cost US$1.3 at API price.</p>
+  <p class="sub">The agent was given only a short description of each object, such as “a park bench”. It works from an operator skill, a set of generic instructions, reference material and scripts that frame its role as that of an engineer. Following it, the agent first wrote a case brief stating how the object is used, where it is held, what loads it and how large each load is. From there it generated the shape, decided where the object is supported and loaded, assigned materials and ran the simulation without further input. On average a session took 6.5 minutes and cost US$1.3 at API price.</p>
   <img width="2800" height="1711" class="fig" src="static/img/gallery.jpg" alt="50 generated objects, each deformed under the loading case the agent posed" loading="lazy">
-  <p class="cap">Each object was posed, simulated and reviewed by the AI agent operator (Claude Code with Opus 5.5) from a few words of description, across 10 categories from household items to landmarks. Color: displacement magnitude. Gray outline: undeformed shape.</p>
+  <p class="cap">Each object was posed, simulated and checked by the AI agent operator (Claude Code with Opus 5.5) from a few words of description, across 10 categories from household items to landmarks. Color: displacement magnitude. Gray outline: undeformed shape.</p>
 </section>
 
 <section id="method">
   <h2>Making every step of structural analysis automatable for an AI agent</h2>
-  <p class="sub">Shapes produced by generative models often contain disconnected pieces and self-intersections, which conventional meshers reject. They also have no CAD faces on which to place loads and no division into parts. MechFoundry stores each shape as a signed distance field on an adaptive octree that does not need to follow the surface, and it splits the surface into parts so that supports, loads and materials can be assigned part by part.</p>
+  <p class="sub">Shapes produced by generative models often contain disconnected pieces and self-intersections, which conventional tetrahedral meshers reject. They also have no CAD faces on which to place loads and no division into parts. MechFoundry stores each shape as a signed distance field on an adaptive octree that does not need to follow the surface, and it splits the surface into parts so that supports, loads and materials can be assigned part by part.</p>
   <img width="2400" height="1960" class="fig" src="static/img/overview.jpg" alt="Comparison of workflows and the MechFoundry pipeline" loading="lazy">
-  <p class="cap"><b>a,</b> Generated shapes break a general-purpose agent at every step of a conventional workflow; MechFoundry makes each step automatable. <b>b,</b> Shape generation, segmentation, AI-assisted supports, loads and materials, and a differentiable diffuse Nitsche solver on an adaptive octree in NVIDIA Warp.</p>
+  <p class="cap"><b>a,</b> Generated shapes can obstruct a general-purpose agent at every step of a conventional workflow (middle row, illustrative); MechFoundry makes each step automatable. <b>b,</b> Shape generation, segmentation, AI-assisted supports, loads and materials, and a differentiable diffuse Nitsche solver on an adaptive octree in NVIDIA Warp.</p>
 </section>
 
 <section id="sessions">
   <h2>The agent decides how each object is used, held, loaded and made</h2>
   <p class="sub">Before computing anything, the agent writes down how the object is used, where it is held, what loads it and how large each load is. For example, the park bench is held at its four feet and loaded on the seat and backrest, while the hammer gets a steel head and a wooden handle. Each row shows these choices followed by the solved deformation.</p>
   <img width="2400" height="2298" class="fig" src="static/img/agentic_results.jpg" alt="Six autonomous sessions: shape, supports and loads, materials, deformed shape" loading="lazy">
-  <p class="cap">Six of the 50 sessions, one per row: the operator’s tokens and time, the generated shape, supports (teal) and loads (orange), per-part Young’s modulus, and the deformed shape.</p>
+  <p class="cap">Six of the 50 sessions, one per row: the session’s tokens and wall-clock time, the generated shape, supports (teal) and loads (orange), per-part Young’s modulus, and the deformed shape.</p>
 </section>
 
 <section id="grades">
   <h2>How language-model reviewers graded the agent’s engineering judgment</h2>
-  <p class="sub">There is no test suite for whether a loading case is the right one, so we gave all 50 objects to Claude Haiku 5.5, Sonnet 5.5 and Opus 5.5 as operators and had two panels of reviewers grade every session. One panel ran three Claude Fable 5.1 agents, from the same model family as the operators, and the other ran three GPT-6-Astra agents. Each reviewer graded the geometry, the supports and loads, and the materials as high, moderate or low, and the bars show the majority vote. The Astra panel was much stricter, and the two panels agreed only slightly to fairly (Cohen’s kappa 0.19–0.25), so the grades are a first indication of where the agent’s judgment holds and where it fails, not a benchmark.</p>
+  <p class="sub">There is no test suite for whether a loading case is the right one, so we gave all 50 objects to Claude Haiku 5.5, Sonnet 5.5 and Opus 5.5 as operators and had two panels of reviewers grade every session. One panel ran three Claude Fable 5.1 agents, from the same model family as the operators, and the other ran three GPT-6-Astra agents. Each reviewer graded the geometry, the supports and loads, and the materials as high, moderate or low, and the bars show the majority vote (the median when all three differ). The Fable panel graded higher than the Astra panel in most sessions where the two differed, and the two panels agreed slightly to fairly (Cohen’s kappa 0.19–0.25), so the grades are a first indication of where the agent’s judgment holds and where it fails, not a benchmark.</p>
   <div class="viz" id="rate">
-    <div class="viz-legend"><span><i class="g-H"></i>High</span><span><i class="g-M"></i>Moderate</span><span><i class="g-L" style="outline:1px solid #cfc6ef"></i>Low</span><span><i class="g-N"></i>Session not finished</span></div>
+    <div class="viz-legend"><span><i class="g-H"></i>High</span><span><i class="g-M"></i>Moderate</span><span><i class="g-L" style="outline:1px solid #cfc6ef"></i>Low</span><span><i class="g-N"></i>Not graded (setting never produced)</span></div>
     <div class="rate-grid" id="rate-grid"></div>
     <div class="viz-tip" id="rate-tip"></div>
   </div>
-  <p class="cap">Number of the 50 objects at each grade, by the majority vote of three reviewers. Haiku 5.5 did not finish 4 sessions.</p>
+  <p class="cap">Number of the 50 objects at each grade, by the majority vote of three reviewers. Haiku 5.5 did not finish 4 sessions; in three of them some settings were never produced and could not be graded (gray).</p>
   <div class="viz" id="cost" style="margin-top: 22px;">
     <div class="rate-panel"><h3>Operator cost per session <span class="unit" style="font-weight:400;color:var(--ink2);font-size:13px">(US$ at API price, log scale; one dot per object)</span></h3></div>
     <svg id="cost-svg" style="width:100%;height:auto"></svg>
@@ -264,44 +266,44 @@
 
 <section id="variations">
   <h2>Generating varied simulations of one object on request</h2>
-  <p class="sub">When asked for variety rather than realism, the agent produced nine robot arms from a single instruction, nine material assignments for a hamburger and nine loading cases for a hammer. Every variant was then solved with the same workflow, at a lower cost than a full session.</p>
+  <p class="sub">From one instruction, the agent produced nine robot arms that differ in generation seed and route. Asked for cases that vary as widely as possible, it wrote nine material assignments for a hamburger and nine loading cases for a hammer. Each variant was solved with the same workflow, and each further variation is cheaper than a fresh session starting from a minimal description.</p>
   <img width="2000" height="2368" class="fig" src="static/img/showcase.jpg" alt="Nine robot arms, nine hamburger material assignments and nine hammer loading cases, with deformed shapes" loading="lazy">
-  <p class="cap"><b>Shapes:</b> nine robot arms from one instruction, differing in generation seed and route. <b>Materials:</b> nine material assignments for the parts of a hamburger. <b>Supports &amp; loads:</b> nine loading cases for a claw hammer. Left: inputs set by the agent (Sonnet 5.5) and mean cost per session. Right: deformed shapes.</p>
+  <p class="cap"><b>Shapes:</b> nine robot arms from one instruction, differing in generation seed and route. <b>Materials:</b> nine material assignments for the parts of a hamburger. <b>Supports &amp; loads:</b> nine loading cases for a claw hammer. Left: the instruction and the mean tokens and time per session. Middle: inputs set by the agent (Sonnet 5.5). Right: deformed shapes.</p>
 </section>
 
 <section id="optimization">
   <h2>Optimizing the design with a differentiable solver</h2>
-  <p class="sub">Because the solver is differentiable, the sensitivity of the objective to the shape is obtained by automatic differentiation and the adjoint method. Shape optimization moves the existing surface. Topology optimization also updates a hidden phase field inside the body, which allows new holes to form. Both runs reduce the table to half its volume while keeping it as stiff as possible.</p>
+  <p class="sub">Because the solver is differentiable, the sensitivity of the objective to the shape is obtained by automatic differentiation and the adjoint method. Shape optimization moves the existing surface. Topology optimization also lets new holes form inside the body. Both runs reduce the table to half its volume while keeping it as stiff as possible.</p>
   <div class="pair">
-    <video controls autoplay muted loop playsinline preload="metadata" poster="static/img/shape_opt_poster.jpg" width="1920" height="978">
+    <figure><div class="vlabel">Shape optimization</div><video aria-label="Shape optimization of a table over 101 iterations" controls autoplay muted loop playsinline preload="metadata" poster="static/img/shape_opt_poster.jpg" width="1920" height="978">
       <source src="static/video/shape_opt.mp4" type="video/mp4">
-    </video>
-    <video controls autoplay muted loop playsinline preload="metadata" poster="static/img/hidden_phi_poster.jpg" width="1920" height="980">
+    </video></figure>
+    <figure><div class="vlabel">Topology optimization</div><video aria-label="Topology optimization of a table over 91 iterations" controls autoplay muted loop playsinline preload="metadata" poster="static/img/hidden_phi_poster.jpg" width="1920" height="980">
       <source src="static/video/hidden_phi.mp4" type="video/mp4">
-    </video>
+    </video></figure>
   </div>
-  <p class="cap"><b>Left:</b> shape optimization (101 iterations, 4.0 min). <b>Right:</b> topology optimization, in which a hidden phase field φ̄ opens new cavities (91 iterations, 3.9 min). Both reduce the table to half its initial volume while minimizing compliance, on one RTX A6000 GPU.</p>
+  <p class="cap"><b>Shape optimization:</b> 101 iterations, 4.0 min. <b>Topology optimization:</b> new cavities open inside the table; 91 iterations, 3.9 min. Both reduce the table to half its initial volume while minimizing its strain energy under the load, on one RTX A6000 GPU.</p>
 </section>
 
 <section id="refinement">
   <h2>Refining generated shapes under the loads the agent posed</h2>
-  <p class="sub">We applied the same optimization to 17 bodies from the autonomous sessions, each under the supports and loads the agent had chosen for it. Material moves toward where the load is carried, so each body becomes stiffer while remaining recognizably the same object.</p>
-  <img width="2400" height="1098" class="fig" src="static/img/refine.jpg" alt="17 generated bodies before and after refinement, with supports, loads and change in shape" loading="lazy">
+  <p class="sub">We applied a short shape optimization to all 50 bodies from the autonomous sessions, each under the supports and loads the agent had chosen for it. It makes the body stiffer under the same loads while penalizing any growth in volume, and it stops before the surface moves far from the generated one, so each object stays recognizably the same. The 17 bodies with a visible refinement are shown.</p>
+  <img width="2400" height="1334" class="fig" src="static/img/refine.jpg" alt="17 generated bodies before and after refinement, with supports, loads and change in shape" loading="lazy">
   <p class="cap">Left of each pair: supports (teal) and loads (orange) posed by the agent. Right: change in shape from −3<i>h</i><sub>min</sub> (blue, material removed) to 3<i>h</i><sub>min</sub> (red, material added), with <i>h</i><sub>min</sub> the finest octree cell size. SE/SE<sub>0</sub>: strain energy relative to the generated body; lower is stiffer under the same load.</p>
 </section>
 
 <section id="interface">
   <h2>Running the workflow in a web interface, by an agent or by a person</h2>
   <p class="sub">The same workflow runs in a web interface. The left column lists past conversations, the middle column holds the conversation with each step and its approval gate, and the right column shows the current result in 3D along with the GPU and CPU load. A person can answer every gate by hand, or start an agent session in which Claude Code drives the same steps and reports what it did.</p>
-  <img width="2400" height="1429" class="fig ui-shot" src="static/img/ui_agent.jpg" alt="Web interface showing an agent-operated park bench session with the agent's report and the displacement result" loading="lazy">
+  <img width="2400" height="1350" class="fig ui-shot" src="static/img/ui_agent.jpg" alt="Web interface showing an agent-operated park bench session with the agent's report and the displacement result" loading="lazy">
   <p class="cap"><b>Agent-operated.</b> After re-solving a park bench with a stiffer wood, the agent reports what it changed, the results and the caveats, while the viewer shows the displacement magnitude.</p>
-  <img width="2400" height="1429" class="fig ui-shot" src="static/img/ui_user.jpg" alt="Web interface showing a user-operated single-seat sofa session with the per-part material card and the displacement result" loading="lazy" style="margin-top: 22px;">
+  <img width="2400" height="1350" class="fig ui-shot" src="static/img/ui_user.jpg" alt="Web interface showing a user-operated single-seat sofa session with the per-part material card and the displacement result" loading="lazy" style="margin-top: 22px;">
   <p class="cap"><b>User-operated.</b> A single-seat sofa: the per-part material card, where inferred values can be edited before approval, and the displacement after the person ran the solve.</p>
 </section>
 
 <section id="comparison">
   <h2>Comparing the diffuse Nitsche solutions with conventional finite elements</h2>
-  <p class="sub">The solver does not use a mesh that follows the surface, so we solved each of the 50 sessions again with conventional finite elements on three body-fitted tetrahedral meshes generated by TetGen. The body-fitted solves are implemented in the same NVIDIA Warp framework and run on the same GPU, so the timings compare the methods rather than the software. Three generated surfaces intersect themselves and TetGen could not mesh them, leaving 47 objects. At the default octree level 7, the displacements of the two methods differ by a median of 4.6–6.6%, and by 2.7–3.0% one level finer. Preparing the octree takes a few seconds or less, while building a tetrahedral mesh for a generated surface takes 7 to 20 times longer, and the diffuse Nitsche solve is at least as fast as the body-fitted ones.</p>
+  <p class="sub">The diffuse Nitsche method solves on an adaptive octree of hexahedral cells that does not follow the surface, so we solved each of the 50 sessions again with conventional finite elements on three body-fitted tetrahedral meshes generated by TetGen. The body-fitted solves use the same Newton solver, written in NVIDIA Warp, on the same machine, with their linear systems solved directly on the CPU. Three generated surfaces intersect themselves and TetGen could not mesh them, leaving 47 objects. At the default octree level 7, the displacements of the two methods differ by a median of 4.6–6.6%, and by 2.7–3.0% one level finer. Preparing the octree takes a few seconds or less, while building a tetrahedral mesh for a generated surface takes 7 to 20 times longer, and the diffuse Nitsche solve is at least as fast as the body-fitted ones.</p>
   <div class="viz" id="viz">
     <div class="viz-legend"><span><i style="background:var(--l7)"></i>Octree level 7 (default)</span><span><i style="background:var(--l8)"></i>Octree level 8</span></div>
     <div class="viz-grid">
@@ -312,12 +314,12 @@
     </div>
     <div class="viz-tip" id="viz-tip"></div>
   </div>
-  <p class="cap">Medians over the 47 objects. Accuracy: difference between the diffuse Nitsche solution and the solution on each body-fitted mesh of linear tetrahedra, after removing rigid-body motion. Body-fitted meshes: <b>matched DOFs</b>, with as many nodes as the octree; <b>matched surface</b>, with surface edges as fine as the finest octree cell; <b>graded</b>, fine at the surface and coarser inside. Preparation: octree, boundary conditions and solver setup for diffuse Nitsche; surface resizing, TetGen meshing, boundary mapping and solver setup for body-fitted meshes. Both methods are implemented in NVIDIA Warp; times on one GPU.</p>
+  <p class="cap">Medians over the objects each solution exists for: the 47 objects TetGen could mesh for the body-fitted solutions and the accuracy (46 at level 8, where one diffuse Nitsche solve did not fully converge), and all 50 for the diffuse Nitsche times (49 for its solve at level 8). Accuracy: difference between the diffuse Nitsche solution and the solution on each body-fitted mesh of linear tetrahedra, after removing rigid-body motion. Body-fitted meshes: <b>matched DOFs</b>, with as many nodes as the octree; <b>matched surface</b>, with surface edges as fine as the finest octree cell; <b>graded</b>, fine at the surface and coarser inside. Preparation: octree, boundary conditions and solver setup for diffuse Nitsche; surface resizing, TetGen meshing, boundary mapping and solver setup for body-fitted meshes. Times are on one NVIDIA RTX A6000 GPU and one AMD Ryzen Threadripper 3970X CPU.</p>
 </section>
 
 </main>
+<div style="height:40px"></div>
 
-<footer>© 2026 the authors · <a href="https://github.com/LuoXueling/MechFoundry">GitHub</a></footer>
 
 <div id="lb"><img alt=""></div>
 <script>
@@ -326,10 +328,10 @@
   lb.addEventListener('click', () => lb.classList.remove('open'));
   document.addEventListener('keydown', e => { if (e.key === 'Escape') lb.classList.remove('open'); });
 
-  // Medians over 47 objects, from experiments/bodyfitted_vs_nitsche/summary/tables/tables.md
+  // Medians (n = 46-50, see caption), from experiments/bodyfitted_vs_nitsche/summary/tables/tables.md
   const VIZ = {
-    l2:    { groups: ['Matched DOFs', 'Matched surface', 'Graded'], l7: [6.6, 4.6, 4.8], l8: [2.7, 3.0, 2.8], unit: '%', dp: 1 },
-    h1:    { groups: ['Matched DOFs', 'Matched surface', 'Graded'], l7: [19, 16, 17],    l8: [8.4, 8.4, 8.1], unit: '%', lab7: ['19', '16', '17'] },
+    l2:    { groups: ['Matched DOFs', 'Matched surface', 'Graded'], l7: [6.6, 4.6, 4.8], l8: [2.7, 3.0, 2.8], unit: '%' },
+    h1:    { groups: ['Matched DOFs', 'Matched surface', 'Graded'], l7: [19, 16, 17],    l8: [8.4, 8.4, 8.1], unit: '%' },
     prep:  { groups: ['Diffuse Nitsche', 'Matched DOFs', 'Matched surface', 'Graded'], l7: [0.655, 7.31, 11.4, 8.26], l8: [2.18, 16.1, 43.5, 29.8], unit: 's', ours: 0 },
     solve: { groups: ['Diffuse Nitsche', 'Matched DOFs', 'Matched surface', 'Graded'], l7: [1.71, 1.95, 1.83, 1.86],  l8: [7.60, 7.91, 21.2, 8.39], unit: 's', ours: 0 },
   };
@@ -379,7 +381,7 @@
   ];
   (function () {
     const grid = document.getElementById('rate-grid'), rtip = document.getElementById('rate-tip'), rbox = document.getElementById('rate');
-    const names = ['High', 'Moderate', 'Low', 'Not finished'], cls = ['g-H', 'g-M', 'g-L', 'g-N'];
+    const names = ['High', 'Moderate', 'Low', 'Not graded (setting never produced)'], cls = ['g-H', 'g-M', 'g-L', 'g-N'];
     RATE.forEach(({ panel, data }) => {
       const pd = document.createElement('div'); pd.className = 'rate-panel'; pd.innerHTML = `<h3>${panel}</h3>`;
       for (const cat in data) {
@@ -437,7 +439,7 @@
         const lb = el('text', { x: x(t), y: H - B + 16, 'text-anchor': 'middle', 'font-size': 11.5, fill: 'var(--ink2)' }, svg); lb.textContent = '$' + t;
       });
       models.forEach((m, r) => {
-        const vals = COST[m], sorted = [...vals].sort((a, b) => a - b), med = (sorted[24] + sorted[25]) / 2;
+        const vals = COST[m], sorted = [...vals].sort((a, b) => a - b), med = Math.round((sorted[24] + sorted[25]) * 50 + 1e-6) / 100;  // median, rounded half-up to the cent
         const cy = T + rowH * (r + 0.5) + (narrow ? 10 : 0);
         if (narrow) {
           const ml = el('text', { x: L, y: cy - 30, 'font-size': 13, fill: '#1b1a22' }, svg);
