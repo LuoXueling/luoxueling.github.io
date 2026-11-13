@@ -63,7 +63,7 @@ My research interests currently lie in **machine learning for mechanics**, **opt
 
 ## Preprints submitted to journals
 
-* **MechFoundry: An agentic loop that poses and performs engineering analyses and optimization of real-world objects**. (Submitted to Nature Machine Intelligence)
+* **MechFoundry: An agentic loop that poses and performs engineering analyses and optimization of real-world objects**. arXiv preprint, [[arXiv:2611.14571](https://arxiv.org/abs/2611.14571)] (Submitted to Nature Machine Intelligence)
   * by **Xue-Ling Luo**, Marco Conte, Peter Yichen Chen, and Nikolaos Bouklas*. 
   * **Role**: Build an agentic workflow that performs GPU-accelerated finite element analysis and optimization from a few words of the object's name. Computational backend implemented with NVIDIA Warp. Also implemented a web user interface.  
 
