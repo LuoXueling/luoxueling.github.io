@@ -29,7 +29,9 @@ concurrency:
 jobs:
   # Build job
   build:
-    runs-on: ubuntu-latest
+    # Pinned: ubuntu-latest became ubuntu-26.04 (Nov 2026), for which the pinned
+    # setup-ruby has no prebuilt Ruby 3.1, so the build failed at "Setup Ruby".
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
