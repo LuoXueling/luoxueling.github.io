@@ -123,6 +123,8 @@
     .g-L { background: #e4def8; color: #1b1a22; }
     .g-N { background: #d9d8de; color: #1b1a22; }
     .rate-axis { display: grid; grid-template-columns: 74px 1fr; gap: 8px; font-size: 11px; color: var(--ink2); margin-top: 2px; }
+    .rate-wide .rate-row, .rate-wide .rate-axis { grid-template-columns: 104px 1fr; }
+    .rate-row.gap { margin-top: 9px; }
     .rate-axis div { display: flex; justify-content: space-between; }
     @media (max-width: 720px) { .rate-grid { grid-template-columns: 1fr; } }
     @media (max-width: 720px) { .viz-grid { grid-template-columns: 1fr; } }
@@ -190,6 +192,7 @@
     <a href="#refinement">Shape refinement</a>
     <a href="#interface">Web interface</a>
     <a href="#grades">Reviewer grades</a>
+    <a href="#open-models">Open-weight models</a>
     <a href="#comparison">FEA accuracy &amp; cost</a>
     <a href="#bibtex">BibTeX</a>
   </div>
@@ -303,7 +306,24 @@
     <svg id="cost-svg" style="width:100%;height:auto"></svg>
     <div class="viz-tip" id="cost-tip"></div>
   </div>
-  <p class="cap">The operator’s cost for each of the 50 sessions, excluding the AI subagent calls inside the workflow (usually under US$0.02 per object). The vertical tick marks the median.</p>
+  <p class="cap">The operator’s cost for each of the 50 sessions, excluding the AI subagent calls inside the workflow (usually under US$0.02 per object). The vertical tick marks the median. The time is the sum of the 50 sessions’ wall-clock times.</p>
+</section>
+
+<section id="open-models">
+  <h2>Open-weight models as operators</h2>
+  <p class="sub">[Updated on Nov. 19, 2026] The operator does not have to be Claude. MechFoundry also runs under the Codex CLI, which can call open-weight models through Hugging Face Inference Providers. We ran the same 50 objects with the same skill, workflow and solver using three more operators: DeepSeek-V4.1-Flash at high and at max reasoning effort, and Kimi-K3.1-Pro. These three batches were graded together with the three Claude batches from the previous section, 300 sessions in all, by new panels of three Claude Fable 5.2 and three GPT-6-Astra reviewers. DeepSeek-V4.1-Flash at max effort received about as many high grades as Sonnet 5.5 for supports and loads, and, from the Fable reviewers, slightly fewer for geometry, at about a third of the cost, so an open-weight model can serve as the operator. Opus 5.5 still received the most high grades from the Fable reviewers, and only Sonnet and Opus produced every setting in all 50 sessions.</p>
+  <div class="viz" id="rate6">
+    <div class="viz-legend"><span><i class="g-H"></i>High</span><span><i class="g-M"></i>Moderate</span><span><i class="g-L" style="outline:1px solid #cfc6ef"></i>Low</span><span><i class="g-N"></i>Not graded (setting never produced)</span></div>
+    <div class="rate-grid rate-wide" id="rate6-grid"></div>
+    <div class="viz-tip" id="rate6-tip"></div>
+  </div>
+  <p class="cap">Number of the 50 objects at each grade. DeepSeek and Kimi ran under the Codex CLI, and Haiku, Sonnet and Opus under Claude Code. A setting is not graded when its session stopped before producing it.</p>
+  <div class="viz" id="cost6" style="margin-top: 22px;">
+    <div class="rate-panel"><h3>Operator cost per session <span class="unit" style="font-weight:400;color:var(--ink2);font-size:13px">(US$ at API price, log scale; one dot per object)</span></h3></div>
+    <svg id="cost6-svg" style="width:100%;height:auto"></svg>
+    <div class="viz-tip" id="cost6-tip"></div>
+  </div>
+  <p class="cap">The operator’s cost for each of the 50 sessions, excluding the AI subagent calls inside the workflow. For DeepSeek and Kimi it is computed from the token counts and the provider’s price list, not a billed amount. The vertical tick marks the median. The time is the sum of the 50 sessions’ wall-clock times; for DeepSeek and Kimi it also depends on how fast the provider served the model.</p>
 </section>
 
 <section id="comparison">
@@ -408,15 +428,15 @@
       'Supports & loads':  { 'Haiku 5.5': [20, 21, 7, 2],  'Sonnet 5.5': [27, 20, 3, 0],  'Opus 5.5': [24, 21, 5, 0] },
       'Materials':         { 'Haiku 5.5': [17, 11, 19, 3], 'Sonnet 5.5': [19, 11, 20, 0], 'Opus 5.5': [20, 11, 19, 0] } } },
   ];
-  (function () {
-    const grid = document.getElementById('rate-grid'), rtip = document.getElementById('rate-tip'), rbox = document.getElementById('rate');
+  function buildRate(id, RATE, gapBefore) {
+    const grid = document.getElementById(id + '-grid'), rtip = document.getElementById(id + '-tip'), rbox = document.getElementById(id);
     const names = ['High', 'Moderate', 'Low', 'Not graded (setting never produced)'], cls = ['g-H', 'g-M', 'g-L', 'g-N'];
     RATE.forEach(({ panel, data }) => {
       const pd = document.createElement('div'); pd.className = 'rate-panel'; pd.innerHTML = `<h3>${panel}</h3>`;
       for (const cat in data) {
         pd.insertAdjacentHTML('beforeend', `<h4>${cat.replace('&', '&amp;')}</h4>`);
         for (const model in data[cat]) {
-          const v = data[cat][model], row = document.createElement('div'); row.className = 'rate-row';
+          const v = data[cat][model], row = document.createElement('div'); row.className = 'rate-row' + (model === gapBefore ? ' gap' : '');
           row.innerHTML = `<span class="m">${model}</span>`;
           const bar = document.createElement('div'); bar.className = 'rate-bar';
           v.forEach((n, i) => { if (!n) return;
@@ -432,7 +452,22 @@
       pd.insertAdjacentHTML('beforeend', '<div class="rate-axis"><span></span><div><span>0</span><span>25</span><span>50 objects</span></div></div>');
       grid.appendChild(pd);
     });
-  })();
+  }
+  buildRate('rate', RATE);
+
+  // Six operators graded together (Fable 5.2 and GPT-6-Astra panels, majority votes: H, M, L, not reached),
+  // from MechFoundry/experiments/model_eval/results/{fable,astra}/evaluation_table.md
+  const RATE6 = [
+    { panel: 'Claude Fable 5.2 reviewers', data: {
+      'Geometry': { 'DeepSeek (high)': [27, 16, 7, 0], 'DeepSeek (max)': [30, 16, 3, 1], 'Kimi K3.1 Pro': [27, 17, 4, 2], 'Haiku 5.5': [29, 15, 5, 1], 'Sonnet 5.5': [34, 14, 2, 0], 'Opus 5.5': [36, 14, 0, 0] },
+      'Supports & loads': { 'DeepSeek (high)': [38, 10, 0, 2], 'DeepSeek (max)': [43, 6, 0, 1], 'Kimi K3.1 Pro': [35, 11, 2, 2], 'Haiku 5.5': [33, 14, 1, 2], 'Sonnet 5.5': [45, 5, 0, 0], 'Opus 5.5': [48, 2, 0, 0] },
+      'Materials': { 'DeepSeek (high)': [35, 9, 4, 2], 'DeepSeek (max)': [32, 10, 7, 1], 'Kimi K3.1 Pro': [31, 10, 6, 3], 'Haiku 5.5': [33, 11, 3, 3], 'Sonnet 5.5': [34, 12, 4, 0], 'Opus 5.5': [36, 9, 5, 0] } } },
+    { panel: 'GPT-6-Astra reviewers', data: {
+      'Geometry': { 'DeepSeek (high)': [11, 23, 15, 1], 'DeepSeek (max)': [11, 28, 10, 1], 'Kimi K3.1 Pro': [12, 24, 11, 3], 'Haiku 5.5': [10, 25, 14, 1], 'Sonnet 5.5': [10, 29, 11, 0], 'Opus 5.5': [15, 27, 8, 0] },
+      'Supports & loads': { 'DeepSeek (high)': [17, 28, 3, 2], 'DeepSeek (max)': [26, 22, 1, 1], 'Kimi K3.1 Pro': [16, 23, 8, 3], 'Haiku 5.5': [19, 22, 7, 2], 'Sonnet 5.5': [25, 22, 3, 0], 'Opus 5.5': [25, 24, 1, 0] },
+      'Materials': { 'DeepSeek (high)': [21, 12, 15, 2], 'DeepSeek (max)': [22, 8, 19, 1], 'Kimi K3.1 Pro': [26, 4, 17, 3], 'Haiku 5.5': [19, 13, 15, 3], 'Sonnet 5.5': [17, 15, 18, 0], 'Opus 5.5': [20, 9, 21, 0] } } },
+  ];
+  buildRate('rate6', RATE6, 'Haiku 5.5');
 
   // Floating section menu: highlight the section in view; toggle on narrow screens
   (function () {
@@ -454,13 +489,12 @@
   // Operator cost per session (CLI total_cost_usd), from implicit_optimize/experiments/model_eval/evaluation_table.md
   const COST = {"objects": ["a TV remote control", "a USB stick", "an electric toothbrush", "a coffee mug", "a computer mouse", "a school chair with a steel frame and a plastic seat", "a glass-top dining table", "a park bench", "a bar stool", "a sofa", "a teddy bear", "a wooden rocking horse", "a pogo stick", "a wooden toy train engine", "a yo-yo", "a jelly dessert", "a loaf of bread", "a hamburger", "a layered birthday cake", "a slice of watermelon", "a giraffe", "an elephant", "a rhinoceros", "a horse", "a crocodile", "a car suspension control arm with rubber bushings", "a truck leaf spring", "a car wheel with its rubber tyre", "a car brake disc", "a crankshaft", "a road roller with a steel drum and rubber tyres", "a jackhammer", "an industrial robot arm", "an adjustable wrench", "a claw hammer", "a dental crown", "a knee implant", "a walking cane with a rubber tip", "a human femur", "a lumbar vertebra", "a skyscraper", "a thatched stone cottage", "a lighthouse", "an igloo", "a log cabin", "the Leaning Tower of Pisa", "the Pantheon", "Himeji Castle", "a natural stone arch", "the Taj Mahal"], "Haiku 5.5": [0.13, 0.4, 0.06, 0.04, 0.04, 0.24, 0.19, 0.47, 0.03, 0.13, 0.04, 0.12, 0.31, 0.12, 0.11, 0.03, 0.12, 0.05, 0.08, 0.05, 0.11, 0.08, 0.04, 0.11, 0.04, 0.22, 0.37, 0.1, 0.03, 0.07, 0.36, 0.35, 0.08, 0.08, 0.25, 0.08, 0.42, 0.13, 0.1, 0.17, 0.1, 0.21, 0.1, 0.04, 0.09, 0.21, 0.31, 0.26, 0.07, 0.12], "Sonnet 5.5": [0.41, 0.52, 0.44, 0.39, 0.34, 0.53, 0.62, 0.73, 0.37, 0.41, 0.36, 0.36, 0.9, 0.43, 0.63, 0.39, 0.47, 0.74, 0.36, 0.48, 0.38, 0.43, 0.43, 0.4, 0.42, 0.54, 0.51, 0.59, 0.66, 0.96, 0.8, 0.76, 0.4, 0.43, 0.51, 0.47, 0.49, 0.55, 0.38, 0.71, 0.67, 0.63, 0.52, 0.47, 0.6, 0.55, 0.77, 0.39, 0.46, 0.46], "Opus 5.5": [0.85, 1.0, 1.05, 0.79, 0.95, 1.5, 1.28, 1.39, 0.88, 0.93, 0.94, 0.82, 1.62, 0.96, 1.52, 1.09, 1.32, 1.4, 0.92, 1.62, 0.94, 0.86, 0.82, 0.88, 1.23, 1.34, 1.89, 1.36, 1.52, 2.67, 3.74, 1.78, 1.15, 1.12, 1.11, 1.29, 2.01, 1.95, 1.34, 1.6, 0.95, 1.09, 1.34, 1.44, 0.83, 1.36, 1.53, 1.39, 1.03, 0.89]};
   const COST_TOTAL = { 'Haiku 5.5': 7.44, 'Sonnet 5.5': 26.22, 'Opus 5.5': 65.29 };
-  (function () {
-    const svg = document.getElementById('cost-svg'), tipc = document.getElementById('cost-tip'), boxc = document.getElementById('cost');
-    const models = ['Haiku 5.5', 'Sonnet 5.5', 'Opus 5.5'];
+  function buildCost(id, COST, COST_TOTAL, TIME, models, labelW, gapBefore) {
+    const svg = document.getElementById(id + '-svg'), tipc = document.getElementById(id + '-tip'), boxc = document.getElementById(id);
     function draw() {
       svg.innerHTML = '';
       const W = Math.max(300, Math.round(svg.parentNode.clientWidth - 32)), narrow = W < 640;
-      const rowH = narrow ? 84 : 62, L = narrow ? 8 : 84, R = narrow ? 14 : 190, T = 8, B = 30, H = T + rowH * models.length + B;
+      const rowH = narrow ? 102 : 62, L = narrow ? 8 : labelW, R = narrow ? 14 : 190, T = 8, B = 30, H = T + rowH * models.length + B;
       svg.setAttribute('viewBox', `0 0 ${W} ${H}`); svg.setAttribute('width', W); svg.setAttribute('height', H);
       const lo = Math.log10(0.02), hi = Math.log10(5), x = v => L + (W - L - R) * (Math.log10(v) - lo) / (hi - lo);
       (narrow ? [0.02, 0.1, 0.5, 2] : [0.02, 0.05, 0.1, 0.2, 0.5, 1, 2, 5]).forEach(t => {
@@ -469,14 +503,16 @@
       });
       models.forEach((m, r) => {
         const vals = COST[m], sorted = [...vals].sort((a, b) => a - b), med = Math.round((sorted[24] + sorted[25]) * 50 + 1e-6) / 100;  // median, rounded half-up to the cent
-        const cy = T + rowH * (r + 0.5) + (narrow ? 10 : 0);
+        const cy = T + rowH * (r + 0.5) + (narrow ? 18 : 0);
         if (narrow) {
-          const ml = el('text', { x: L, y: cy - 30, 'font-size': 13, fill: '#1b1a22' }, svg);
-          ml.innerHTML = `<tspan font-weight="600">${m}</tspan><tspan fill="#5d5b6a"> · median $${med.toFixed(2)} · total $${COST_TOTAL[m].toFixed(2)}</tspan>`;
+          const ml = el('text', { x: L, y: cy - 46, 'font-size': 13, fill: '#1b1a22' }, svg);
+          ml.innerHTML = `<tspan font-weight="600">${m}</tspan><tspan fill="#5d5b6a"> · median $${med.toFixed(2)}</tspan>`;
+          const ml2 = el('text', { x: L, y: cy - 30, 'font-size': 12, fill: 'var(--ink2)' }, svg); ml2.textContent = `total $${COST_TOTAL[m].toFixed(2)} and ${TIME[m]} for 50`;
         } else {
           const ml = el('text', { x: 0, y: cy + 4, 'font-size': 13, fill: '#1b1a22' }, svg); ml.textContent = m;
-          const st = el('text', { x: W - R + 14, y: cy - 2, 'font-size': 12.5, fill: '#1b1a22', 'font-weight': 600 }, svg); st.textContent = `median $${med.toFixed(2)}`;
-          const st2 = el('text', { x: W - R + 14, y: cy + 14, 'font-size': 12, fill: 'var(--ink2)' }, svg); st2.textContent = `total $${COST_TOTAL[m].toFixed(2)} for 50`;
+          const st = el('text', { x: W - R + 14, y: cy - 9, 'font-size': 12.5, fill: '#1b1a22', 'font-weight': 600 }, svg); st.textContent = `median $${med.toFixed(2)}`;
+          const st2 = el('text', { x: W - R + 14, y: cy + 7, 'font-size': 12, fill: 'var(--ink2)' }, svg); st2.textContent = `total $${COST_TOTAL[m].toFixed(2)} for 50`;
+          const st3 = el('text', { x: W - R + 14, y: cy + 22, 'font-size': 12, fill: 'var(--ink2)' }, svg); st3.textContent = `${TIME[m]} for 50`;
         }
         const step = narrow ? 5 : 7, rad = narrow ? 3 : 4;
         const order = vals.map((v, i) => [v, i]).sort((a, b) => a[0] - b[0]); const placed = [];
@@ -491,10 +527,19 @@
           hit.addEventListener('mouseleave', () => { c.setAttribute('r', rad); tipc.style.opacity = 0; });
         });
         el('line', { x1: x(med), x2: x(med), y1: cy - 20, y2: cy + 20, stroke: '#1b1a22', 'stroke-width': 2 }, svg);
+        if (m === gapBefore) el('line', { x1: narrow ? 0 : 0, x2: W, y1: T + rowH * r, y2: T + rowH * r, stroke: '#cfcbe0', 'stroke-dasharray': '4 4' }, svg);
       });
     }
     draw(); let rt; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(draw, 120); });
-  })();
+  }
+  const TIME = { 'Haiku 5.5': '5 h 39 min', 'Sonnet 5.5': '3 h 56 min', 'Opus 5.5': '5 h 23 min' };  // wall clock, sum over the 50 runs (evaluation_table.md)
+  buildCost('cost', COST, COST_TOTAL, TIME, ['Haiku 5.5', 'Sonnet 5.5', 'Opus 5.5'], 84);
+
+  // Six operators, per-session cost (Claude: CLI total_cost_usd; Codex runs: priced from token counts), same source as RATE6
+  const COST6 = {"objects": ["a TV remote control", "a USB stick", "an electric toothbrush", "a coffee mug", "a computer mouse", "a school chair with a steel frame and a plastic seat", "a glass-top dining table", "a park bench", "a bar stool", "a sofa", "a teddy bear", "a wooden rocking horse", "a pogo stick", "a wooden toy train engine", "a yo-yo", "a jelly dessert", "a loaf of bread", "a hamburger", "a layered birthday cake", "a slice of watermelon", "a giraffe", "an elephant", "a rhinoceros", "a horse", "a crocodile", "a car suspension control arm with rubber bushings", "a truck leaf spring", "a car wheel with its rubber tyre", "a car brake disc", "a crankshaft", "a road roller with a steel drum and rubber tyres", "a jackhammer", "an industrial robot arm", "an adjustable wrench", "a claw hammer", "a dental crown", "a knee implant", "a walking cane with a rubber tip", "a human femur", "a lumbar vertebra", "a skyscraper", "a thatched stone cottage", "a lighthouse", "an igloo", "a log cabin", "the Leaning Tower of Pisa", "the Pantheon", "Himeji Castle", "a natural stone arch", "the Taj Mahal"], "DeepSeek (high)": [0.1, 0.06, 0.06, 0.06, 0.06, 0.07, 0.12, 0.2, 0.09, 0.06, 0.07, 0.07, 0.15, 0.07, 0.1, 0.1, 0.08, 0.14, 0.05, 0.1, 0.07, 0.08, 0.07, 0.08, 0.18, 0.12, 0.13, 0.07, 0.12, 0.14, 0.24, 0.12, 0.07, 0.05, 0.08, 0.09, 0.15, 0.18, 0.08, 0.13, 0.13, 0.12, 0.06, 0.06, 0.05, 0.08, 0.1, 0.07, 0.06, 0.08], "DeepSeek (max)": [0.09, 0.22, 0.15, 0.11, 0.15, 0.62, 0.21, 0.22, 0.12, 0.17, 0.13, 0.11, 0.17, 0.16, 0.17, 0.07, 0.07, 0.08, 0.08, 0.11, 0.1, 0.15, 0.11, 0.1, 0.15, 0.19, 0.16, 0.16, 0.21, 0.27, 0.38, 0.39, 0.12, 0.1, 0.11, 0.22, 0.14, 0.11, 0.15, 0.17, 0.13, 0.14, 0.17, 0.18, 0.15, 0.12, 0.17, 0.2, 0.12, 0.11], "Kimi K3.1 Pro": [0.78, 0.67, 0.52, 0.42, 0.61, 1.57, 0.68, 1.41, 0.96, 0.62, 0.67, 0.63, 0.98, 0.84, 0.44, 0.96, 0.55, 0.92, 0.35, 1.12, 0.79, 0.91, 0.64, 0.63, 0.89, 1.11, 3.76, 0.93, 0.51, 1.44, 1.62, 1.57, 0.39, 0.55, 0.55, 0.79, 1.18, 1.77, 0.47, 0.75, 1.0, 0.64, 1.22, 2.29, 0.96, 0.87, 0.97, 0.84, 0.76, 0.52], "Haiku 5.5": [0.13, 0.4, 0.06, 0.04, 0.04, 0.24, 0.19, 0.47, 0.03, 0.13, 0.04, 0.12, 0.31, 0.12, 0.11, 0.03, 0.12, 0.05, 0.08, 0.05, 0.11, 0.08, 0.04, 0.11, 0.04, 0.22, 0.37, 0.1, 0.03, 0.07, 0.36, 0.35, 0.08, 0.08, 0.25, 0.08, 0.42, 0.13, 0.1, 0.17, 0.1, 0.21, 0.1, 0.04, 0.09, 0.21, 0.31, 0.26, 0.07, 0.12], "Sonnet 5.5": [0.41, 0.52, 0.44, 0.39, 0.34, 0.53, 0.62, 0.73, 0.37, 0.41, 0.36, 0.36, 0.9, 0.43, 0.63, 0.39, 0.47, 0.74, 0.36, 0.48, 0.38, 0.43, 0.43, 0.4, 0.42, 0.54, 0.51, 0.59, 0.66, 0.96, 0.8, 0.76, 0.4, 0.43, 0.51, 0.47, 0.49, 0.55, 0.38, 0.71, 0.67, 0.63, 0.52, 0.47, 0.6, 0.55, 0.77, 0.39, 0.46, 0.46], "Opus 5.5": [0.85, 1.0, 1.05, 0.79, 0.95, 1.5, 1.28, 1.39, 0.88, 0.93, 0.94, 0.82, 1.62, 0.96, 1.52, 1.09, 1.32, 1.4, 0.92, 1.62, 0.94, 0.86, 0.82, 0.88, 1.23, 1.34, 1.89, 1.36, 1.52, 2.67, 3.74, 1.78, 1.15, 1.12, 1.11, 1.29, 2.01, 1.95, 1.34, 1.6, 0.95, 1.09, 1.34, 1.44, 0.83, 1.36, 1.53, 1.39, 1.03, 0.89]};
+  const COST6_TOTAL = { 'DeepSeek (high)': 4.84, 'DeepSeek (max)': 8.18, 'Kimi K3.1 Pro': 47.01, 'Haiku 5.5': 7.44, 'Sonnet 5.5': 26.22, 'Opus 5.5': 65.29 };
+  const TIME6 = { 'DeepSeek (high)': '6 h 45 min', 'DeepSeek (max)': '10 h 08 min', 'Kimi K3.1 Pro': '8 h 09 min', ...TIME };
+  buildCost('cost6', COST6, COST6_TOTAL, TIME6, ["DeepSeek (high)", "DeepSeek (max)", "Kimi K3.1 Pro", "Haiku 5.5", "Sonnet 5.5", "Opus 5.5"], 112, 'Haiku 5.5');
 </script>
 </body>
 </html>
